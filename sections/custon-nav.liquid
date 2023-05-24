@@ -21,38 +21,35 @@
                 role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
                 <img
                   src="https://assets.website-files.com/63f392630fc00a3518a46778/6413fd2e2810c5890ad72499_icons8-close.svg"
-                  loading="lazy" width="45" alt="" class="nav-close-icon-2"></div>
+                   width="32" height="32" alt="" class="nav-close-icon-2"></div>
+<!--               ORIGINAL MENU CLOSE BUTTON -->
+<!--                 Menu
+                <img
+                  src="https://assets.website-files.com/63f392630fc00a3518a46778/6413fd2e2810c5890ad72499_icons8-close.svg"
+                   width="45" height="45" alt="" class="nav-close-icon-2"></div> -->
             </div>
             <div class="dropdown-menu">
-              <div class="top-tablet-menu"><a href="/" aria-current="page" class="logo-mobile-2 w-nav-brand w--current"
+              <div class="top-tablet-menu">
+                <a href="/" aria-current="page" class="logo-mobile-2 w-nav-brand w--current"
                   aria-label="home"><img
                     src="https://assets.website-files.com/63f392630fc00a3518a46778/6413f51197659857ee9dc0a7_New%20Logo.png"
                     loading="lazy" sizes="100vw" height="24"
                     srcset="https://assets.website-files.com/63f392630fc00a3518a46778/6413f51197659857ee9dc0a7_New%20Logo-p-500.png 500w, https://assets.website-files.com/63f392630fc00a3518a46778/6413f51197659857ee9dc0a7_New%20Logo-p-800.png 800w, https://assets.website-files.com/63f392630fc00a3518a46778/6413f51197659857ee9dc0a7_New%20Logo-p-1080.png 1080w, https://assets.website-files.com/63f392630fc00a3518a46778/6413f51197659857ee9dc0a7_New%20Logo-p-1600.png 1600w, https://assets.website-files.com/63f392630fc00a3518a46778/6413f51197659857ee9dc0a7_New%20Logo-p-2000.png 2000w, https://assets.website-files.com/63f392630fc00a3518a46778/6413f51197659857ee9dc0a7_New%20Logo.png 2496w"
-                    alt="" class="image-ruc tablet" style="will-change: opacity; opacity: 1;"></a>
-                <div class="border-wrap"><a href="/" aria-current="page" class="header-link w-inline-block w--current">
-                    <div class="header-title">Home</div>
-                  </a><a href="/pages/products" class="header-link w-inline-block">
-                    <div class="header-title">Products</div>
-                  </a><a href="/pages/services" class="header-link w-inline-block">
-                    <div class="header-title">Services</div>
-                  </a><a href="/pages/contact-us" class="header-link w-inline-block">
-                    <div class="header-title">Contact Us</div>
-                  </a></div>
-              </div>
-              <div class="weglot-container" data-switcher-id="1" id="weglot-switcher-1">
-                <div data-wg-notranslate="true" tabindex="0" role="listbox" aria-activedescendant="weglot-language-en"
-                  aria-label="Language selected: English" class="weglot_switcher toggle">
-                  <div class="language-options">
-                    <div data-l="en" class="language-option"
-                      style="background-color: rgb(5, 84, 242); cursor: pointer;"><a tabindex="-1"
-                        href="https://ipp-solutions-canada.myshopify.com/" target="_self" role="none" id="weglot-language-en"
-                        style="color: white;">en</a></div>
-                    <div data-l="fr" class="language-option" style="background-color: transparent; cursor: pointer;"><a
-                        tabindex="-1" href="https://ipp-solutions-canada.myshopify.com/fr" target="_self" role="none"
-                        id="weglot-language-fr" style="color: rgb(51, 51, 51);">fr</a></div>
+                    alt="" class="image-ruc tablet" style="will-change: opacity; opacity: 1;">
+                  </a>
+                  <div class="border-wrap"><a href="{{section.settings.menu_1_link}}" aria-current="page" class="header-link w-inline-block w--current">
+                    <div class="header-title">{{section.settings.menu_1}}</div>
+                  </a>
+                  <a id="link-product" href="{{section.settings.menu_2_link}}" class="header-link w-inline-block">
+                    <div class="header-title">{{section.settings.menu_2}}</div>
+                  </a>
+                  <a href="{{section.settings.menu_3_link}}" class="header-link w-inline-block">
+                    <div class="header-title">{{section.settings.menu_3}}</div>
+                  </a>
+                  <a href="{{section.settings.menu_4_link}}" class="header-link w-inline-block">
+                    <div class="header-title">{{section.settings.menu_4}}</div>
+                  </a>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -68,37 +65,27 @@
             </div>
             <nav data-w-id="a6e64b53-4b60-b48a-fd13-eb4892d92224" class="wg-dd-1-list w-dropdown-list"
               id="w-dropdown-list-0" aria-labelledby="w-dropdown-toggle-0"
-              style="height: 0%; background-color: rgba(0, 0, 0, 0);"><a href="#" lang="fr"
+              style="height: 0%; background-color: rgba(0, 0, 0, 0);">
+              <a href="#" lang="fr"
                 class="wg-dropdown-1-link w-dropdown-link" tabindex="0">fr</a></nav>
-          </div>
-        </div>
-      </div><a href="/pages/contact-us" class="primary-blue-button header-button w-button">Contact Us</a>
+          </div> 
+        </div>   
+      </div><a href="{{section.settings.menu_5_link}}" class="primary-blue-button header-button w-button">{{section.settings.menu_5}}</a>
       <div class="search-shop-con-2 home-5">
         <div data-w-id="89385717-1392-dfe4-0b80-fd62fc5505b3" class="navbar-search-icon-2"></div>
       </div>
       <div class="menu-button-2 w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button"
         tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
         <div class="wrapper-item-home-1">
-          <div class="line-header"></div>
-          <div class="line"></div>
+<!--           <div class="line-header"><div></div></div> -->
+          <div class="line"><div></div></div>
+          <div class="line"><div></div></div>
         </div>
       </div>
     </div>
   </div>
   <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0" style="display: none;"></div>
 </div>
-
-<script>
-  document.getElementById("weglot-language-en").onclick = function(){
-    origEl =window.location.href;
-    console.log(origEl);
-    // https://ipp-solutions-canada.myshopify.com/
-    window.location = 'https://ipp-solutions-canada.myshopify.com/fr'
-
-    window.location.pathname = "/bn/home";
-  }
-</script>
-
 
 <script> 
   var body = document.getElementsByTagName('body')[0];
@@ -110,7 +97,7 @@
           nav_bg.style.backgroundColor = 'rgba(0, 0, 0, 0)';
       }
        else { 
-          nav_bg.style.backgroundColor = 'black';
+          nav_bg.style.backgroundColor = '#010524';
       }
   }
 </script>
@@ -126,7 +113,78 @@
       "id": "include_margins",
       "default": true,
       "label": "t:sections.apps.settings.include_margins.label"
-    }
+    },
+    {
+          "type": "text",
+          "id": "menu_1",
+          "default": "Your text",
+          "label": "Menu One Label"
+      
+        },
+    {
+          "type": "text",
+          "id": "menu_1_link",
+          "default": "Your text",
+          "label": "Menu One Link"
+      
+        },
+    {
+          "type": "text",
+          "id": "menu_2",
+          "default": "Your text",
+          "label": "Menu Two Label"
+      
+        }, 
+    {
+          "type": "text",
+          "id": "menu_2_link",
+          "default": "Your text",
+          "label": "Menu Two Link"
+      
+        },
+    
+    {
+          "type": "text",
+          "id": "menu_3",
+          "default": "Your text",
+          "label": "Menu Three Label"
+      
+        },
+        {
+          "type": "text",
+          "id": "menu_3_link",
+          "default": "Your text",
+          "label": "Menu Three Link"
+      
+        },
+    {
+          "type": "text",
+          "id": "menu_4",
+          "default": "Your text",
+          "label": "Menu Four Label"
+      
+        },
+     {
+          "type": "text",
+          "id": "menu_4_link",
+          "default": "Your text",
+          "label": "Menu Four Link"
+      
+        },
+      {
+          "type": "text",
+          "id": "menu_5",
+          "default": "Contact",
+          "label": "Contact Label"
+      
+        },
+      {
+          "type": "text",
+          "id": "menu_5_link",
+          "default": "Contact",
+          "label": "Contact Link"
+      
+        }
   ],
   "blocks": [
     {

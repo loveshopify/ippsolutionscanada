@@ -226,3 +226,21 @@
     display: list-item;
   }
 }
+
+/*new code */ 
+.multicolumn-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.multicolumn-list__item {
+  flex-basis: 33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .multicolumn-list {
+    flex-direction: column;
+  }
+}

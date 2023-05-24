@@ -1,21 +1,19 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
-
-
 <div class="section wf-section">
   <div class="base-container-8 w-container">
     <div data-w-id="4fd71d03-d449-5762-aabb-1db581483580" class="home-23-contacts-wrapper">
       <div data-w-id="4fd71d03-d449-5762-aabb-1db581483581" class="home-contacts-2">
         <div class="main-title-wrapper">
-          <h6 class="vertical_inscription secondary-sections vertical-title">Our contacts</h6>
-          <h2 class="question-title section-title-h2">Do you have an <span class="blue-h2-text">interesting question?</span></h2>
+          <h6 class="vertical_inscription secondary-sections vertical-title">{{section.settings.text_1}}</h6>
+          <h2 class="question-title section-title-h2">{{section.settings.text_2}} <span class="blue-h2-text">{{section.settings.text_3}}</span></h2>
         </div>
         <div class="contacts-adress-wrap-2">
           <div class="contacts-adress-2">
-            <h5 class="fotm-sub-title">Headquarters</h5>
+            <h5 class="fotm-sub-title">{{section.settings.text_4}}</h5>
             <div class="contacts-detail">
               <p class="contacts-icon"><img class="form-icon" src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/icons8-_-48.png?v=1682189514" alt="location"></p>
-              <p class="contacts-address">30-800 Route Carter Sainte-Marie, Qc G6E 0B2</p>
+              <p class="contacts-address">{{section.settings.text_5}}</p>
             </div>
             <div class="contacts-detail">
               <p class="contacts-icon"><img class="form-icon" src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/icons8-_-30.png?v=1682189621" alt="tel"></p>
@@ -57,10 +55,7 @@
             </li>
           </ul>
           {%- endif -%}
-        
-  
           <div class="contact__fields1 flex-horizontal-center wrap-mobile">
-        
             <input class="field__input1 contacts-input-ruc w-input" autocomplete="name" type="text" id="ContactForm-name"
               name="contact[{{ 'templates.contact.form.name' | t }}]"
               value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
@@ -120,7 +115,32 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-   
+    {
+          "type": "text",
+          "id": "text_1",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_2",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_3",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_4",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_5",
+          "default": "Your text",
+          "label": "Text"
+        }
   ],
   "presets": [
     {

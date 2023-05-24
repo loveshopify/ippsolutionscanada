@@ -3,32 +3,31 @@
     <div class="text-content-wrapper-services-hero">
       <div class="home-4-content-wrap">
         <div class="main-title-wrapper home-4-wrap">
-          <h6 id="fr5" class="vertical-inscription-home-4 services">Our Services</h6>
-          <h1 class="home-1-title services"><span class="yellow-h2-text"><strong>RIDGID</strong></span><strong> Camera Repairs Service</strong></h1>
+          <h6 id="fr5" class="vertical-inscription-home-4 services">{{section.settings.button_label_1}}</h6>
+          <h1 class="home-1-title services"><span class="yellow-h2-text"><strong>{{section.settings.button_label_2}}</strong></span><strong> {{section.settings.button_label_3}}</strong></h1>
         </div>
-        <p data-w-id="74d826ee-15d8-5859-0ff4-c1e4256a77f1" style="opacity:1" class="service-description">We repair all RIDGID cameras !<br>‍<br>We offer high quality RIDGID camera repairs with quick turnaround time and can handle the shipping both ways to minimize the impact on your operations and costs.<br>‍<br>Contacts us today to learn how we can help you get back up and running faster than ever before !<br></p>
+        <p data-w-id="74d826ee-15d8-5859-0ff4-c1e4256a77f1" style="opacity:1" class="service-description">{{section.settings.button_label_4}}<br>‍<br>{{section.settings.button_label_5}}<br>‍<br>{{section.settings.button_label_6}}<br></p>
       </div>
       <div data-w-id="74d826ee-15d8-5859-0ff4-c1e4256a77fa" style="opacity:1" class="services-adavntages-block">
         <div class="advantages-services-wrapper">
           <div class="brand-block-image"><img src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/72h-repair-yellow.svg?v=1682003110" loading="lazy" alt="" class="image-brand services"></div>
-          <h5 class="heading-3 blue-background">72 hour repair</h5>
+          <h5 class="heading-3 blue-background">{{section.settings.button_label_7}}</h5>
         </div>
         <div class="advantages-services-wrapper">
           <div class="brand-block-image"><img src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/Competitive-Price-Yellow.svg?v=1682003203" loading="lazy" alt="" class="image-brand services"></div>
-          <h5 class="heading-3 blue-background">Competitive prices</h5>
+          <h5 class="heading-3 blue-background">{{section.settings.button_label_8}}</h5>
         </div>
         <div class="advantages-services-wrapper">
           <div class="brand-block-image"><img src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/warranty-Yellow.svg?v=1682003268" loading="lazy" alt="" class="image-brand services"></div>
-          <h5 class="heading-3 blue-background">3 month warranty</h5>
+          <h5 class="heading-3 blue-background">{{section.settings.button_label_9}}</h5>
         </div>
       </div>
       <div class="link-wrapper-with-line">
-        <a href="pages/contact-us" class="primary-yellow-button">Get a quote</a>
+        <a href="pages/contact-us" class="primary-yellow-button">{{section.settings.button_label_10}}</a>
       </div>
     </div>
   </div>
-  <div class="banner-block-left-home-1 services"></div>
-</div>
+ 
 
 {% schema %}
 {
@@ -40,7 +39,68 @@
     "type": "url",
     "id": "link",
     "label": "Button link"
-  }
+  }, {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Your text",
+          "label": "Text"
+      
+        },
+    {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "button_label_3",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "button_label_4",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "button_label_5",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "button_label_6",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "button_label_7",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "button_label_8",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "button_label_9",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "button_label_10",
+          "default": "Your link text",
+          "label": "Text"
+      
+        }
   ],
   "blocks": [
     

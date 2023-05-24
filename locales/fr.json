@@ -477,5 +477,10 @@
       "message": "Message",
       "max_characters": "{{ max_chars }} caractères au maximum"
     }
+  },
+  "customer_accounts": {
+    "orders": {
+      "contact_us": "Nous contacter"
+    }
   }
 }

@@ -3,18 +3,29 @@
     "f291393d-fd72-40e7-b01e-cdcf788f8103": {
       "type": "header-banner",
       "settings": {
-        "link": "shopify:\/\/pages\/contact-us"
+        "link": "shopify:\/\/pages\/contact-us",
+        "button_label_1": "Our company",
+        "button_label_2": "Distributing",
+        "button_label_3": "aqueduct, sewer cleaning, inspection and rehabilitation",
+        "button_label_4": "products.",
+        "button_label_5": "IPP Solutions Canada Inc distributes aqueduct and sewer cleaning, inspection and rehabilitation products across Canada.",
+        "button_label_6": "Contact Us",
+        "button_label_7": "Link Button"
       }
     },
     "3e61c4d9-6dab-4791-a2aa-c4c6832a7d17": {
       "type": "text-section",
       "settings": {
+        "button_label_1": "Our products",
+        "button_label_2": "We distribute",
+        "button_label_3": "aqueduct and sewer cleaning, inspection and rehabilitation",
+        "button_label_4": "products."
       }
     },
     "01d1fab2-abb5-4d21-8a9e-da805e074c2a": {
       "type": "content-with-img-black",
       "settings": {
-        "vertical_txt": "Our Products",
+        "vertical_txt": "Our Company",
         "title1": "",
         "title2": "PipeCaster Pro,",
         "title3": "Redefining Pipe Rehabilitation",
@@ -39,8 +50,8 @@
         "paragraph2": "",
         "list-tem1": "",
         "list-tem2": "",
-        "btn-title": "Contact us",
-        "button_link": "shopify:\/\/pages\/contact-us",
+        "btn-title": "Buy now",
+        "button_link": "shopify:\/\/pages\/shop",
         "image": "shopify:\/\/shop_images\/best-chain-cutters-1.png",
         "img-left_enable": false,
         "img_top_mob": true
@@ -100,10 +111,13 @@
     },
     "c31278af-e111-4cff-b29e-2e9e4c894209": {
       "type": "content-with-img",
+      "custom_css": [
+        "p {color: black;}"
+      ],
       "settings": {
         "vertical_txt": "Our Products",
-        "title1": "MwStop® <br>",
-        "title2": "Check Valve",
+        "title1": "MwStop®",
+        "title2": "Check <br>Valve",
         "title3": "",
         "paragraph1": "MwStop® can be installed in virtually any pipe, even retrospectively, in just a few minutes and provides immediate effective protection against flooding, foreign bodies and annoying odours.",
         "paragraph2": "The wide MwStop® range ensures that the right MwStop® model is available for every application, whether it is for backwater protection of the sewer system, for use in rainwater pipes or for preventing odour formation in mixed sewers.",
@@ -118,8 +132,21 @@
     },
     "334d677d-2c7c-417e-95f1-ee026f2aa0d0": {
       "type": "big-banner",
+      "custom_css": [
+        "h1 {font-weight: 700;}"
+      ],
       "settings": {
-        "link": "shopify:\/\/pages\/contact-us"
+        "link": "shopify:\/\/pages\/contact-us",
+        "button_label_1": "Our Service",
+        "button_label_2": "RIDGID",
+        "button_label_3": "Camera Repairs Service",
+        "button_label_4": "We repair all RIDGID cameras !",
+        "button_label_5": "We offer high quality RIDGID camera repairs with quick turnaround time and can handle the shipping both ways to minimize the impact on your operations and costs.",
+        "button_label_6": "Contacts us today to learn how we can help you get back up and running faster than ever before !",
+        "button_label_7": "72 hour repair",
+        "button_label_8": "Competitive prices",
+        "button_label_9": "3 month warranty",
+        "button_label_10": "Get a quote"
       }
     },
     "9fcd3bc2-816a-488b-9201-7908a889ede4": {
@@ -143,11 +170,23 @@
     "862cfaa9-49b0-4afc-8aa1-c00944a94994": {
       "type": "blockquote-slider",
       "settings": {
+        "button_label_1": "TESTIMONIALS",
+        "button_label_2": "\"Supplier of pipe inspection cameras, high pressure cleaning nozzles and a membrane spray liner solution that I've come to know this year and is already proving itself in terms of customer service and quick response.\"",
+        "button_label_3": "Guillaume Fortin",
+        "button_label_4": "\"The team is amazing to deal with and a real class act as a supplier if you need equipment buy it from him you won't regret it.\"",
+        "button_label_5": "Adam Upton",
+        "button_label_6": "\"Great service, speed, openness.👍\"",
+        "button_label_7": "Marc Dufour"
       }
     },
     "2a95d08e-f58e-470e-aa88-2832337bec52": {
       "type": "custom-contact-form",
       "settings": {
+        "text_1": "Our contacts",
+        "text_2": "Do you have an",
+        "text_3": "interesting question?",
+        "text_4": "Headquarters",
+        "text_5": "30-800 Route Carter Sainte-Marie, Qc G6E 0B2"
       }
     }
   },

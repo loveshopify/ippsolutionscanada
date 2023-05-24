@@ -4,25 +4,23 @@
       <div class="home-4-content-wrap">
         <div class="main-title-wrapper home-4-wrap"
           style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-          <h6 id="servicesh1" class="vertical-inscription-home-4 services vertical-txt-cotact-ban">Our Services</h6>
+          <h6 id="servicesh1" class="vertical-inscription-home-4 services vertical-txt-cotact-ban">{{section.settings.text_1}}</h6>
           <h1 id="servicesh1_1" class="home-1-title services" ><span 
-              class="yellow-h2-text"><strong>RIDGID</strong></span><strong> Camera Repairs Service</strong></h1>
+              class="yellow-h2-text"><strong>{{section.settings.text_2}} </strong></span><strong> {{section.settings.text_3}}</strong></h1>
         </div>
         <p data-w-id="ecc8c14e-11a5-84ce-8706-b77e3b212b6b"
           style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-          class="home-ruc-4-description">We offer professional RIDGID camera repair services. Our services will save you
-          time and money by restoring your camera to its optimal performance, so you can get back to work with minimal
-          downtime.<br></p>
+          class="home-ruc-4-description">{{section.settings.text_4}}<br></p>
         <div data-w-id="ecc8c14e-11a5-84ce-8706-b77e3b212b6e"
           style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
           class="button-block-right">
-          <a href="tel:1-418-809-9309" class="primary-yellow-button">Call us now</a>
+          <a href="tel:1-418-809-9309" class="primary-yellow-button">{{section.settings.text_5}}</a>
         </div>
       </div>
       <div class="bottom-block-home-servicies">
         <div data-w-id="ecc8c14e-11a5-84ce-8706-b77e3b212b74"
           style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;  margin-top: 20px;"
-          class="text-block home-4-description desk-txt  ">Different companies cooperate with us</div>
+          class="text-block home-4-description desk-txt  ">{{section.settings.text_6}}</div>
         <div data-w-id="ecc8c14e-11a5-84ce-8706-b77e3b212b76"
           style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; "
           class="brand-block">
@@ -36,7 +34,6 @@
               class="image-brand services"></div>
         </div>
       </div>
-      <!-- <div class="text-content-right-home-1"></div> -->
     </div>
     <div data-w-id="ed7452b6-f113-ba94-d048-6dda949ce9f7"
       style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
@@ -67,7 +64,6 @@
             </ul>
             {%- endif -%}
           
-    
             <div class="contact__fields1 flex-horizontal-center wrap-mobile">
           
               <input class="contacts-input-hero w-input" autocomplete="name" type="text" id="ContactForm-name"
@@ -112,7 +108,6 @@
             </div>
             {%- endform -%}
           </div>
-          
         </div>
         <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
           <div class="text-block-2">Thank you! Your submission has been received!</div>
@@ -122,7 +117,7 @@
         </div>
       </div>
   </div>
-  <div class="banner-block-left-home-1 services"></div>
+ 
 </div>
 <style>
   .form-status-list{
@@ -140,7 +135,42 @@
       "id": "include_margins",
       "default": true,
       "label": "t:sections.apps.settings.include_margins.label"
-    }
+    }, {
+          "type": "text",
+          "id": "text_1",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_2",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_3",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_4",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_5",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_6",
+          "default": "Your text",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "text_7",
+          "default": "Your text",
+          "label": "Text"
+        }
   ],
   "blocks": [
     

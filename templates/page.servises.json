@@ -11,12 +11,28 @@
     "552eb760-e083-4a6b-bf26-1735cc9ebc93": {
       "type": "banner-with-form",
       "settings": {
-        "include_margins": true
+        "include_margins": true,
+        "text_1": "Our Service",
+        "text_2": "RIDGID",
+        "text_3": "Camera Repairs Service",
+        "text_4": "We offer professional RIDGID camera repair services. Our services will save you time and money by restoring your camera to its optimal performance, so you can get back to work with minimal downtime.",
+        "text_5": "Call us now",
+        "text_6": "Different companies cooperate with us",
+        "text_7": "Your text"
       }
     },
     "0a25ea84-f433-4bb2-982f-cdffb78c5998": {
       "type": "benefits-with-icons",
       "settings": {
+        "button_label_1": "Why us ?",
+        "button_label_2": "IPP Solutions Canada offers you the best service",
+        "button_label_3": "in Canada!",
+        "button_label_4": "72 hour repair",
+        "button_label_5": "Get back to generating money with your cameras faster than ever before",
+        "button_label_6": "Competitive prices",
+        "button_label_7": "All our repairs are priced fairly and we can handle the shipping both ways at very low prices due to our high volume",
+        "button_label_8": "3 month warranty",
+        "button_label_9": "Our repairs are done to very high quality standards and we offer 3 months of warranty across the board"
       }
     },
     "78bdaccc-a12c-4260-981e-5697cc79e05e": {
@@ -39,11 +55,23 @@
     "6c10c781-33e2-4c2b-b142-557a9d19b616": {
       "type": "blockquote-slider-light",
       "settings": {
+        "button_label_1": "TESTIMONIALS",
+        "button_label_2": "\"Supplier of pipe inspection cameras, high pressure cleaning nozzles and a membrane spray liner solution that I've come to know this year and is already proving itself in terms of customer service and quick response. Thank you IPP Solutions Canada for the good service.\"",
+        "button_label_3": "Guillaume Fortin",
+        "button_label_4": "\"Felix is amazing to deal with and a real class act as a supplier if you need equipment buy it from him you won't regret it.\"",
+        "button_label_5": "Adam Upton",
+        "button_label_6": "\"Great service, speed, openness.👍\"",
+        "button_label_7": "Emily Blunt"
       }
     },
     "e2283080-31b4-4f8b-8d70-ffcf472707ac": {
       "type": "custom-contact-form",
       "settings": {
+        "text_1": "Our contacts",
+        "text_2": "Do you have an",
+        "text_3": "interesting question?",
+        "text_4": "Headquarters",
+        "text_5": "30-800 Route Carter Sainte-Marie, Qc G6E 0B2"
       }
     },
     "ee282c25-ebc0-4a80-b553-86e90fca4818": {

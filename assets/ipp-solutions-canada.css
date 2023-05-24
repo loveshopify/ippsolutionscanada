@@ -4789,7 +4789,7 @@ blockquote {
 
 .testimonials-item-wrapper {
   display: flex;
-  height: 470px;
+  min-height: 470px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -7211,7 +7211,12 @@ blockquote {
   display: flex;
 }
 
+div:not(.line):empty {
+  display: block;
+}
+
 .line {
+  display: block;
   width: 42px;
   height: 2px;
   margin-bottom: 3px;
@@ -13739,11 +13744,11 @@ blockquote {
 
   .testimonials-quote-icon-2 {
     font-size: 45px;
-  }
+  } 
 
   .testimonials-item-wrapper {
-    height: 400px;
-  }
+    min-height: 400px;
+  } 
 
   .testimonials {
     padding-top: 80px;
@@ -16033,7 +16038,7 @@ blockquote {
   }
 
   .testimonials-item-wrapper {
-    height: 450px;
+    min-height: 450px;
   }
 
   .testimonials {
@@ -17658,7 +17663,7 @@ blockquote {
   }
 
   .testimonials-item-wrapper {
-    height: 582px;
+    min-height: 582px;
   }
 
   .testimonials-slider-con {
@@ -20543,11 +20548,16 @@ font-size: 13px;
 .text-content-wrapper-services-hero{
   padding: 10px;
   }
-
+  .stars-testimonial-wrapper {
+    margin-top: 10px;
+}
 }
 @media screen and (max-width: 406px){
   .footer-links-wrapper-2{
     grid-column-gap: 15px
+  }
+  .home-1-title{
+    width: auto;
   }
 }
 .desk-txt{

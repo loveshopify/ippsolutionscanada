@@ -1,0 +1,2304 @@
+
+                .beae-placeholder-text:empty{
+                    display:block;
+                }
+                .beae-placeholder-text::after {
+                    content: attr(placeholder);
+                    opacity: 0.5;
+                    display: inline-block;
+                }
+            
+                .beae__element--button{
+                    display: inline-flex;
+                    align-items: center;
+                }
+                .beae__element--button-icon{
+                    display:inline-flex;
+                    color:inherit;
+                }
+                .beae__element--button-icon svg{
+                    width:18px;
+                    height:auto
+                }
+            
+            .beae-product-item:hover .beae-atc-special-mode > div {
+                transform: translateY(0);
+                opacity:1
+            }
+            .beae-atc-special-mode {
+                    overflow:hidden;
+                    position:absolute;
+                    z-index: 9999;
+                    bottom:0;
+                    left:0;
+                    right:0;
+                    width:100%
+                }
+            .beae-atc-special-mode > div {
+                transform: translateY(100%);
+                opacity:0;
+                transition:all .4s cubic-bezier(.25,.46,.45,.94)
+            }
+                .beae-products__layout-grid {
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                    display: grid;
+                    gap: 1rem;
+                }
+                .beae-flex-column {
+                    display: flex;
+                    flex-direction: column
+                }
+
+                .beae-d-flex {
+                    display: flex;
+                    flex-wrap:wrap;
+                }
+                .beae-product-information{
+                    flex: 1
+                }
+                .beae-products-container .core__microelement--price .core__micro--wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                .beae-products-container .beae-swiper-button-prev svg,
+                .beae-products-container .beae-swiper-button-next svg{
+                    width: 45px;
+                    height: 45px;
+                }
+                .beae-collection.beae-products {
+                    width: 100%;
+                }
+                .beae-title{
+                    position: relative;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    width: 100%;
+                }
+                .beae-title[data-title-align="right"]{
+                    justify-content: flex-end;
+                }
+                .beae-title[data-title-align="center"]{
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .beae-no-heading[data-button-align="tc"],
+                [data-button-align="bc"]{
+                    text-align: center;
+                }
+                .beae-no-heading[data-button-align="tr"],
+                [data-button-align="br"]{
+                    text-align: right;
+                }
+                .beae-title[data-title-align="center"][data-button-align="tc"]{
+                    flex-direction: column;
+                }
+                .beae-title[data-title-align="center"][data-button-align="tr"] .beae-products__actions--view-more-wrapper{
+                    position: absolute;
+                    right:0;
+                }
+                .beae-title[data-title-align="center"][data-button-align="tl"] .beae-products__actions--view-more-wrapper{
+                    position: absolute;
+                    left: 0;
+                }
+                .beae-title[data-title-align="left"][data-button-align="tr"]{
+                    justify-content: space-between;
+                }
+                .beae-title[data-title-align="right"][data-button-align="tl"]{
+                    justify-content: space-between;
+                    flex-direction: row-reverse;
+                }
+                .beae-title[data-title-align="right"] .beae-title-main,
+                .beae-title[data-title-align="left"] .beae-title-main{
+                    align-self: start;
+                    z-index: 1;
+                }
+                .beae-title[data-title-align="right"][data-button-align="tc"] .beae-products__actions--view-more-wrapper,
+                .beae-title[data-title-align="left"][data-button-align="tc"] .beae-products__actions--view-more-wrapper{
+                    text-align: center;
+                    position: absolute;
+                    left: 0;
+                    right:0;
+                    z-index:0
+                }
+                .beae-products__actions--view-more-wrapper .core__micro--wrapper {
+                    display:inline-flex
+                }
+
+                .beae-load-more{
+                    position:relative;
+                    display: inline-flex;
+                    line-height: 45px;
+                    padding:0 35px;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: ease .3s;
+                    text-transform: capitalize;
+                    border: 1px solid #000000;
+                    text-decoration:none;
+                }
+
+                .beae-load-more.loading:before{
+                    content: "";
+                    height: 1em;
+                    width: 1em;
+                    vertical-align: middle;
+                    display: inline-block;
+                    border-radius: 50%;
+                    border: 2px solid;
+                    border-top-color: transparent;
+                    animation: beaeSpin infinite 1s linear;
+                    margin-right: 5px;
+                    margin-top: -1px;
+                }
+
+                .beaeFadeInUp{
+                    animation-name: baeeFadeInUp;
+                    animation-duration: .8s;
+                    animation-fill-mode: both;
+                    animation-timing-function: cubic-bezier(.65,.8,.44,.99);
+                }
+
+                @keyframes beaeSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+                @keyframes baeeFadeInUp{from{opacity:0;transform:translate3d(0,80px,0)}to{opacity:1;transform:none}}
+
+                .beae-products .beae-product-media a {
+                    text-decoration: none;
+                    color: inherit;
+                    width: 100%
+                }
+
+                .beae-products-quick-shop--force-hide {
+                    display: none;
+                }
+
+                .beae-products--text-only {
+                    background: rgb(26 27 24 / 8%);
+                }
+
+                .beae-product-item {
+                    overflow: hidden;
+                }
+
+                .beae-product-item--wrapper {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .beae-product-item .beae-product-item--inner {
+                    display: block
+                }
+
+                .beae-products--text-only .beae-product-item--content {
+                    grid-row: 2;
+                    justify-self: center;
+                    margin-bottom: 6rem;
+                    margin-top: 5rem;
+                }
+
+                .beae-products--text-only .beae-product-item--inner {
+                    display: grid;
+                    grid-template-rows: 1fr auto 1fr;
+                    width: 100%;
+                }
+
+                .beae-product-badge {
+                    z-index: 3;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    pointer-events: none
+                }
+
+                .beae-product-badge>span {
+                    pointer-events: auto;
+                    font-size: 12px;
+                    letter-spacing: 0.3px;
+                    text-transform: uppercase;
+                    padding: 1px 5px;
+                }
+                .beae-product-badge--sale{
+                    color:#ffffff;
+                    background-color: #da5f39;
+                }
+                .beae-microelement-price--prices{
+                    color: #000000;
+                }
+                .beae-product-price--sale{
+                    //color: #ec0101;
+                }
+                .beae-product--compare-at-price{
+                    color:#666666;
+                    font-size: 16px;
+                    text-decoration: line-through;
+                    margin-left:5px;
+                }
+
+                .beae-products-item--information-wrapper .beae-product-item-vendor .core__micro--button {
+                        width: 100%;
+                }
+                .beae-product-item-vendor a{
+                    font-size: 13px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    width : 100%;
+                    display: flex;
+                }
+
+                .beae-product-item-information-title{
+                    font-size: 18px;
+                    color:#000000;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                    transition: 0.3s;
+                    text-decoration:none;
+                }
+                .beae-product-item-information-title > span{
+                    display:block;
+                }
+
+                .beae-visually-hidden {
+                    display: none;
+                }
+
+                .beae-products-quick-shop-wrapper {
+                    display: none;
+                }
+
+                .load-more_wrap {
+                    display: flex;
+                }
+
+                .beae-products-quick-shop--force-show {
+                    display: block !important;
+                }
+
+                /** Image product **/
+
+                .beae-product-media {
+                    display: block;
+                    position: relative;
+                }
+                .beae-product-media .core__micro--image{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+                .beae-product-media .core__micro--image div{
+                    height:100%;
+                    width:100%;
+                    display:block;
+                }
+                .beae-product-media .core__micro--image img{
+                    max-width: 100%;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                    transition: opacity .4s cubic-bezier(.25, .46, .45, .94);
+                }
+
+                .beae-product-media--hover-effect:hover .beae-product-secondary-media{
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .beae-product-media--hover-effect:hover .beae-product-media-image,
+                .beae-product-secondary-media {
+                    opacity: 0;
+                    visibility:hidden;
+                }
+
+                /** Skeleton **/
+                .beae-product-card {
+                    background-color: #fff;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12);
+                }
+
+                .beae-product-card .beae-product-card-image {
+                    height: 200px;
+                }
+
+                .beae-product-card .beae-product-card-image img {
+                    display: block;
+                    width: 100%;
+                    height: inherit;
+                    object-fit: cover;
+                }
+
+                .beae-product-card .beae-product-card-content {
+                    padding: 2rem 1.8rem;
+                }
+
+                .beae-product-card h4 {
+                    margin: 0 0 1rem;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                }
+
+                .beae-product-card .beae-product-card-description {
+                    font-size: 1rem;
+                    line-height: 1.4rem;
+                }
+
+                .beae-product-card.beae-product-card-loading .beae-product-card-image,
+                .beae-product-card.beae-product-card-loading h4,
+                .beae-product-card.beae-product-card-loading .beae-product-card-description {
+                    background-color: #ededed;
+                    background: linear-gradient(100deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 60%) #ededed;
+                    background-size: 200% 100%;
+                    background-position-x: 180%;
+                    animation: 1s loading ease-in-out infinite;
+                }
+
+                @keyframes loading {
+                    to {
+                        background-position-x: -20%;
+                    }
+                }
+
+                .beae-product-card.beae-product-card-loading h4 {
+                    min-height: 1.6rem;
+                    border-radius: 4px;
+                    animation-delay: 0.05s;
+                }
+
+                .beae-product-card.beae-product-card-loading .beae-product-card-description {
+                    min-height: 4rem;
+                    border-radius: 4px;
+                    animation-delay: 0.06s;
+                }
+                /** End Image **/
+
+                /** Countdown **/
+                .beae-product-media>.beae-product-countdown{
+                    position: absolute;
+                    text-align: center;
+                    bottom: 0;
+                    width: 100%;
+                    z-index: 5;
+                }
+                .beae-product-countdown{
+                    position: relative;
+                    margin: 15px 0;
+                }
+                .beae-element__countdown--time .beae-products-time--number{
+                    font-size: 28px;
+                    line-height: 32px;
+                    font-weight: 500;
+                    width:100%
+                }
+                .beae-element__countdown--time .beae-products-time--label{
+                    font-size: .8em;
+                    text-transform: capitalize;
+                    width:100%
+                }
+                .beae-products-time--item{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .beae-element__countdown--time{
+                    display: flex;
+                    grid-column-gap: 10px;
+                    grid-row-gap: 10px;
+                }
+                /** End Countdown **/
+
+                .beae-product-item {
+                    position: relative;
+                }
+
+                .beae-products-form__actions {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .beae-product-item:hover .beae-product-image-loading img:last-child {
+                    min-height: 150px;
+                }
+
+                .beae-product-item:hover .beae-product-image-loading::before {
+                    visibility: visible;
+                }
+                .beae-product-item svg{
+                    width:40px;
+                    height: 40px;
+                }
+                .beae-products-view-more-after .beae-products-view-more-icon,
+                .beae-products-quickshop-icon-after .beae-products-quickshop-icon,
+                .beae-products-add-cart-icon-after .beae-products-add-cart-icon{
+                    order: 1;
+                }
+                .beae-products-submit:not(.beae-products-quick-shop--force-hide),
+                .beae-products-form__actions--quickshop:not(.beae-products-quick-shop--force-hide) {
+                    display: inline-flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .beae-product-image-loading::before {
+                    content: ' ';
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    z-index: 4;
+                    border: 4px solid #343232;
+                    opacity: 1;
+                    visibility: hidden;
+                    border-radius: 50%;
+                    animation: beae-loading .5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+                    vertical-align: middle;
+                    margin: auto;
+                }
+
+                @keyframes beae-loading {
+                    0% {
+                        top: 0px;
+                        left: 0px;
+                        width: 0;
+                        height: 0;
+                        opacity: 1;
+                    }
+                    100% {
+                        top: 0px;
+                        left: 0px;
+                        width: 72px;
+                        height: 72px;
+                        opacity: 0;
+                    }
+                }
+
+
+            .beae-product-picker-dropdown-label,
+            .beae-product-picker-radio-label,
+            .beae-product-item-information-title{
+                width:100%;
+            }
+
+            .beae-products-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .beae-product-countdown-wrapper{
+                display:flex;
+                flex-direction:column;
+            }
+            .beae-product-price--bage-sale{
+                display:inline-block
+            }
+            .beae-products-form__actions--add{
+                font-size:16px;
+                line-height:1
+            }
+            .beae-flex-row {
+                display:grid;
+                grid-template-columns: 40% auto;
+            }
+
+            .quickview-popup {
+                position:relative;
+                background:white;
+                margin: auto;
+                width: 60%;
+                height: 90vh;
+                overflow: scroll;
+                display:none
+            }
+            .core__micro--button_quickview_btn{
+                display:flex;
+            }
+            .beae-spinner-container {
+                width: 100%;
+                height: 100%;
+                z-index: 99999;
+                text-align: center;
+            }
+                .beae-spinner {
+                    margin: auto;
+                    border: 2px solid #dbf2ff; 
+                    /*
+                    change to dotted for something cool.
+                    change width to 1px for tapered bar
+                    */
+                    width: 32px;
+                    height: 32px;
+                    display: inline-block;
+                    position: absolute;
+                    top: 45%;
+                    border-radius: 50%;
+                    border-right: 2px solid #018df7;
+                    text-align:center;
+                    animation-name: beaeSpin;
+                    animation-duration: 900ms;
+                    animation-iteration-count: infinite;
+                    /*animation-timing-function: linear; /*linear spin */
+                    animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67);
+                }
+                    @-webkit-keyframes beaeSpin {
+                    0% { -webkit-transform: rotate(0deg); }
+                    /*50% {width:24px;height:24px} /*shrinking effect*/
+                    100% { -webkit-transform: rotate(360deg); }
+                    }
+                    @keyframes beaeSpin {
+                    0% { -webkit-transform: rotate(0deg);}
+                    /*50% {width:24px;height:24px} /*shrinking effect*/
+                    100% { -webkit-transform: rotate(360deg); }
+                    }
+
+                .beae-product-picker-main-label {
+                    width:100%
+                }
+                .beae-product-picker--list {
+                    display:flex;
+                    gap:10px;
+                    flex-wrap:wrap
+                }
+                .beae-product-picker-ratio-list-item {
+                    padding:4px 8px;
+                    border-radius:4px;
+                    border:1px solid #ccc;
+                    cursor:pointer
+                }
+                .beae-product-picker-ratio-list-item.beae-product-swatch-item--active {
+                    border-color: rgba(5, 150, 105,1);
+                }
+                .beae-product-picker-images-item img {
+                    width:40px;
+                    height:40px
+                }
+                @media screen and (max-width:999px) {
+                    .quickview-popup {
+                        width: 70%;
+                    }
+                }
+                @media screen and (max-width:480px) {
+                    .quickview-popup {
+                        width: 90%;
+                    }
+                }
+            
+
+                    .beae-products__layout-grid {
+                        grid-template-columns: repeat(4, minmax(0, 1fr));
+                        display: grid;
+                        gap: 1rem;
+                    }
+                    .beae-products-main--grid button{
+                        border-radius: 0;
+                        font-weight:normal;
+                        min-height:auto;
+                        height:auto;
+                    }
+
+                    .beae-products-main--grid .beae-products-badge span + span{
+                        margin-top: 3px;
+                    }
+
+                    button.swym-button.beae-products-wishlist-button {
+                        position: absolute;
+                        right: 3%;
+                        top: 2%;
+                        z-index: 2;
+                    }
+                    .swym-button.beae-products-wishlist-button:not(.swym-loaded){
+                        display:none;
+                    }
+                
+                .beae-column {
+                    position: relative;
+                    /* display: flex; responsive generate display block */
+                }
+                .beae-column>.core__column--wrapper {
+                    align-items: flex-start; /* fix tam de mn lam layout */
+                    display: flex;
+                    padding: 20px;
+                }
+                .beae-column:hover {
+                    z-index: 1;
+                }
+                @media only screen and (min-width: 768px) {
+                    .beae-column>.core__column--wrapper {
+                        height: 100%;
+                    }
+                }
+            .beae-section-background-video > * {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                overflow: hidden;
+            }
+            .beae-section-background-video > * > * {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                pointer-events: none;
+                background: black;
+            }
+            section.beae-section .beae-section-background-video > .beae-section-background-video-normal{
+                display:block
+            }
+            section.beae-section .beae-section-background-video > .beae-section-background-video-hover{
+                display:none
+            }
+            section.beae-section:hover .beae-section-background-video--hover > .beae-section-background-video-normal{
+                display:none !important
+            }
+            section.beae-section:hover .beae-section-background-video--hover > .beae-section-background-video-hover{
+                display:block !important
+            }
+                .beae-row {
+                    width: 100%;
+                    position: relative;
+                }
+                .beae-section__overlay > .beae-overlay{
+                    display:block;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    bottom:0;
+                    right:0;
+                }
+                .beae-row:not(.beae-section) {
+                    float: left;
+                }
+                .beae-row.beae-section {
+                    clear: both;
+                }
+                .beae-row:hover {
+                    z-index: 1;
+                }
+                .beae-row>div.core__row--columns.core__row--full {
+                    max-width: 100%;
+                }
+                div.core__row--columns {
+                    margin: 0 auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    position: relative;
+                    z-index: 1;
+                }
+                .beae-section-shape-divider{
+                    position:absolute;
+                    left:0;
+                    right:0;
+                    overflow:hidden;
+                    -webkit-transform: translate3d(0,0,0);
+                    transform: translate3d(0,0,0);
+                    display:flex
+                }
+                .beae-section-shape-divider[data-shape-position="top"]{
+                    top:0
+                }
+                .beae-section-shape-divider[data-shape-position="bottom"]{
+                    bottom:0;
+                }
+                .beae-section-shape-divider[data-shape-position="bottom"] > span{
+                    transform: rotateX(180deg);
+                }
+                .beae-section-shape-divider > span{
+                    width: 100%;
+                }
+                .beae-section-shape-divider svg {
+                    display:flex;
+                    position:relative;
+                    left:50%;
+                    transform:translateX(-50%);
+                    width:100%;
+                    height:100px;
+                }
+                    [data-beae-animation] {
+                        animation-duration: 1000ms
+                    }
+                    html, body {
+                        width: 100vw;
+                        max-width: 100%;
+                        min-height: 100vh;
+                    }
+                    body {
+                        margin: 0px;
+                    }
+
+                    div.beae-builder *,
+                    div.beae-builder *::before,
+                    div.beae-builder *::after {
+                        box-sizing: border-box;
+                    }
+
+
+                    /* container image */
+
+                    .beae-image-default {
+                        display: block;
+                    }
+
+                    div.beae-builder {
+                        width:100%;
+                        margin: 0 auto;
+                    }
+
+                    div.beae-core img {
+                        max-width: 100%;
+                        height: auto;
+                        border: 0;
+                        vertical-align: middle;
+                    }
+
+                    div.beae-core figure {
+                        margin: 0px;
+                    }
+
+                    div.core__group--body>div.core__blocks {
+                        padding: 14px;
+                    }
+
+                    .beae-combined-elements div.core__group--body>div.core__blocks {
+                        padding: 0;
+                    }
+
+                    .beae-combined-elements div.core__group--item+div.core__group--item {
+                        margin-top: 30px;
+                    }
+
+
+                    /* .beae-block a,
+                    .beae-block img,
+                    .beae-block picture {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+
+                    .beae-block picture,
+                    .beae-block figure {
+                        overflow: hidden;
+                    } */
+
+                    div.core__blocks {
+                        display: flex;
+                        width: 100%;
+                        min-height: 20px;
+                        height: 100%;
+                        /*Vertically align blocks*/
+                    }
+
+                    div.core__blocks>div.core__blocks--body {
+                        display: flex;
+                        /* display: block; Modify by daniel */
+                        flex-wrap: wrap;
+                        align-content: flex-start;
+                        width: 100%;
+                        position: relative;
+                    }
+
+                    div.beae-group {
+                        overflow: visible !important;
+                    }
+
+                    div.beae-group__items {
+                        display: inline-block;
+                        width: 100%;
+                    }
+
+                    div.beae-block {
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        height: fit-content;
+                    }
+
+                    .beae__element *,
+                    .beae-element *:not(.beae-shopify__blog--post-link--ratio) {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        vertical-align: baseline;
+                    }
+
+                    .beae__element ul,
+                    .beae__element ol,
+                    .beae-element ul,
+                    .beae-element ol {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .beae-html ul {
+                        color:inherit;
+                        display: block;
+                        list-style-type: disc;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        padding-inline-start: 40px;
+                    }
+
+                    .beae-html ol {
+                        color:inherit;
+                        display: block;
+                        list-style-type: decimal;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        padding-inline-start: 40px;
+                    }
+
+                    .beae-html ul ul {
+                        list-style-type: circle;
+                        margin-block-start: 0px;
+                        margin-block-end: 0px;
+                    }
+
+                    .beae-html ul ul ul {
+                        list-style-type: square;
+                    }
+
+                    .beae-html ol ol,
+                    .beae-html ul ol {
+                        margin-block-start: 0px;
+                        margin-block-end: 0px;
+                    }
+
+                    .beae__element input,
+                    .beae__element select,
+                    .beae__element textarea,
+                    .beae__element button,
+                    .beae-element input,
+                    .beae-element select,
+                    .beae-element textarea,
+                    .beae-element button {
+                        font-family: inherit;
+                    }
+
+
+                    .beae__element,
+                    .beae-element{
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                    }
+
+                    @keyframes bounce {
+                        20%,53%,80%,from,to {
+                            animation-timing-function: cubic-bezier(.215,.61,.355,1);
+                            transform: translate3d(0,0,0)
+                        }
+
+                        40%,43% {
+                            animation-timing-function: cubic-bezier(.755,.050,.855,.060);
+                            transform: translate3d(0,-30px,0)
+                        }
+
+                        70% {
+                            animation-timing-function: cubic-bezier(.755,.050,.855,.060);
+                            transform: translate3d(0,-15px,0)
+                        }
+
+                        90% {
+                            transform: translate3d(0,-4px,0)
+                        }
+                    }
+
+                    .beae-mode-bounce {
+                        animation-name: bounce;
+                        transform-origin: center bottom
+                    }
+
+                    @keyframes flash {
+                        50%,from,to {
+                            opacity: 1
+                        }
+
+                        25%,75% {
+                            opacity: 0
+                        }
+                    }
+
+                    .beae-mode-flash {
+                        animation-name: flash
+                    }
+
+                    @keyframes pulse {
+                        from,to {
+                            transform: scale3d(1,1,1)
+                        }
+
+                        50% {
+                            transform: scale3d(1.05,1.05,1.05)
+                        }
+                    }
+
+                    .beae-mode-pulse {
+                        animation-name: pulse
+                    }
+
+                    @keyframes rubberBand {
+                        from,to {
+                            transform: scale3d(1,1,1)
+                        }
+
+                        30% {
+                            transform: scale3d(1.25,.75,1)
+                        }
+
+                        40% {
+                            transform: scale3d(.75,1.25,1)
+                        }
+
+                        50% {
+                            transform: scale3d(1.15,.85,1)
+                        }
+
+                        65% {
+                            transform: scale3d(.95,1.05,1)
+                        }
+
+                        75% {
+                            transform: scale3d(1.05,.95,1)
+                        }
+                    }
+
+                    .beae-mode-rubberBand {
+                        animation-name: rubberBand
+                    }
+
+                    @keyframes shake {
+                        from,to {
+                            transform: translate3d(0,0,0)
+                        }
+
+                        10%,30%,50%,70%,90% {
+                            transform: translate3d(-10px,0,0)
+                        }
+
+                        20%,40%,60%,80% {
+                            transform: translate3d(10px,0,0)
+                        }
+                    }
+
+                    .beae-mode-shake {
+                        animation-name: shake
+                    }
+
+                    @keyframes headShake {
+                        0% {
+                            transform: translateX(0)
+                        }
+
+                        6.5% {
+                            transform: translateX(-6px) rotateY(-9deg)
+                        }
+
+                        18.5% {
+                            transform: translateX(5px) rotateY(7deg)
+                        }
+
+                        31.5% {
+                            transform: translateX(-3px) rotateY(-5deg)
+                        }
+
+                        43.5% {
+                            transform: translateX(2px) rotateY(3deg)
+                        }
+
+                        50% {
+                            transform: translateX(0)
+                        }
+                    }
+
+                    .beae-mode-headShake {
+                        animation-timing-function: ease-in-out;
+                        animation-name: headShake
+                    }
+
+                    @keyframes swing {
+                        20% {
+                            transform: rotate3d(0,0,1,15deg)
+                        }
+
+                        40% {
+                            transform: rotate3d(0,0,1,-10deg)
+                        }
+
+                        60% {
+                            transform: rotate3d(0,0,1,5deg)
+                        }
+
+                        80% {
+                            transform: rotate3d(0,0,1,-5deg)
+                        }
+
+                        to {
+                            transform: rotate3d(0,0,1,0deg)
+                        }
+                    }
+
+                    .beae-mode-swing {
+                        transform-origin: top center;
+                        animation-name: swing
+                    }
+
+                    @keyframes tada {
+                        from,to {
+                            transform: scale3d(1,1,1)
+                        }
+
+                        10%,20% {
+                            transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)
+                        }
+
+                        30%,50%,70%,90% {
+                            transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)
+                        }
+
+                        40%,60%,80% {
+                            transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)
+                        }
+                    }
+
+                    .beae-mode-tada {
+                        animation-name: tada
+                    }
+
+                    @keyframes wobble {
+                        from,to {
+                            transform: none
+                        }
+
+                        15% {
+                            transform: translate3d(-25%,0,0) rotate3d(0,0,1,-5deg)
+                        }
+
+                        30% {
+                            transform: translate3d(20%,0,0) rotate3d(0,0,1,3deg)
+                        }
+
+                        45% {
+                            transform: translate3d(-15%,0,0) rotate3d(0,0,1,-3deg)
+                        }
+
+                        60% {
+                            transform: translate3d(10%,0,0) rotate3d(0,0,1,2deg)
+                        }
+
+                        75% {
+                            transform: translate3d(-5%,0,0) rotate3d(0,0,1,-1deg)
+                        }
+                    }
+
+                    .beae-mode-wobble {
+                        animation-name: wobble
+                    }
+
+                    @keyframes jello {
+                        11.1%,from,to {
+                            transform: none
+                        }
+
+                        22.2% {
+                            transform: skewX(-12.5deg) skewY(-12.5deg)
+                        }
+
+                        33.3% {
+                            transform: skewX(6.25deg) skewY(6.25deg)
+                        }
+
+                        44.4% {
+                            transform: skewX(-3.125deg) skewY(-3.125deg)
+                        }
+
+                        55.5% {
+                            transform: skewX(1.5625deg) skewY(1.5625deg)
+                        }
+
+                        66.6% {
+                            transform: skewX(-.78125deg) skewY(-.78125deg)
+                        }
+
+                        77.7% {
+                            transform: skewX(.390625deg) skewY(.390625deg)
+                        }
+
+                        88.8% {
+                            transform: skewX(-.1953125deg) skewY(-.1953125deg)
+                        }
+                    }
+
+                    .beae-mode-jello {
+                        animation-name: jello;
+                        transform-origin: center
+                    }
+
+                    @keyframes bounceIn {
+                        20%,40%,60%,80%,from,to {
+                            animation-timing-function: cubic-bezier(.215,.61,.355,1)
+                        }
+
+                        0% {
+                            opacity: 0;
+                            transform: scale3d(.3,.3,.3)
+                        }
+
+                        20% {
+                            transform: scale3d(1.1,1.1,1.1)
+                        }
+
+                        40% {
+                            transform: scale3d(.9,.9,.9)
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: scale3d(1.03,1.03,1.03)
+                        }
+
+                        80% {
+                            transform: scale3d(.97,.97,.97)
+                        }
+
+                        to {
+                            opacity: 1;
+                            transform: scale3d(1,1,1)
+                        }
+                    }
+
+                    .beae-mode-bounceIn {
+                        animation-name: bounceIn
+                    }
+
+                    @keyframes bounceInDown {
+                        60%,75%,90%,from,to {
+                            animation-timing-function: cubic-bezier(.215,.61,.355,1)
+                        }
+
+                        0% {
+                            opacity: 0;
+                            transform: translate3d(0,-3000px,0)
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: translate3d(0,25px,0)
+                        }
+
+                        75% {
+                            transform: translate3d(0,-10px,0)
+                        }
+
+                        90% {
+                            transform: translate3d(0,5px,0)
+                        }
+
+                        to {
+                            transform: none
+                        }
+                    }
+
+                    .beae-mode-bounceInDown {
+                        animation-name: bounceInDown
+                    }
+
+                    @keyframes bounceInLeft {
+                        60%,75%,90%,from,to {
+                            animation-timing-function: cubic-bezier(.215,.61,.355,1)
+                        }
+
+                        0% {
+                            opacity: 0;
+                            transform: translate3d(-3000px,0,0)
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: translate3d(25px,0,0)
+                        }
+
+                        75% {
+                            transform: translate3d(-10px,0,0)
+                        }
+
+                        90% {
+                            transform: translate3d(5px,0,0)
+                        }
+
+                        to {
+                            transform: none
+                        }
+                    }
+
+                    .beae-mode-bounceInLeft {
+                        animation-name: bounceInLeft
+                    }
+
+                    @keyframes bounceInRight {
+                        60%,75%,90%,from,to {
+                            animation-timing-function: cubic-bezier(.215,.61,.355,1)
+                        }
+
+                        from {
+                            opacity: 0;
+                            transform: translate3d(3000px,0,0)
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: translate3d(-25px,0,0)
+                        }
+
+                        75% {
+                            transform: translate3d(10px,0,0)
+                        }
+
+                        90% {
+                            transform: translate3d(-5px,0,0)
+                        }
+
+                        to {
+                            transform: none
+                        }
+                    }
+
+                    .beae-mode-bounceInRight {
+                        animation-name: bounceInRight
+                    }
+
+                    @keyframes bounceInUp {
+                        60%,75%,90%,from,to {
+                            animation-timing-function: cubic-bezier(.215,.61,.355,1)
+                        }
+
+                        from {
+                            opacity: 0;
+                            transform: translate3d(0,3000px,0)
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: translate3d(0,-20px,0)
+                        }
+
+                        75% {
+                            transform: translate3d(0,10px,0)
+                        }
+
+                        90% {
+                            transform: translate3d(0,-5px,0)
+                        }
+
+                        to {
+                            transform: translate3d(0,0,0)
+                        }
+                    }
+
+                    .beae-mode-bounceInUp {
+                        animation-name: bounceInUp
+                    }
+
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0
+                        }
+
+                        to {
+                            opacity: 1
+                        }
+                    }
+
+                    .beae-mode-fadeIn {
+                        animation-name: fadeIn
+                    }
+
+                    @keyframes fadeInDown {
+                        from {
+                            opacity: 0;
+                            transform: translate3d(0,-100%,0)
+                        }
+
+                        to {
+                            opacity: 1;
+                            transform: none
+                        }
+                    }
+
+                    .beae-mode-fadeInDown {
+                        animation-name: fadeInDown
+                    }
+
+                    @keyframes fadeInLeft {
+                        from {
+                            opacity: 0;
+                            transform: translate3d(-100%,0,0)
+                        }
+
+                        to {
+                            opacity: 1;
+                            transform: none
+                        }
+                    }
+
+                    .beae-mode-fadeInLeft {
+                        animation-name: fadeInLeft
+                    }
+
+                    @keyframes fadeInRight {
+                        from {
+                            opacity: 0;
+                            transform: translate3d(100%,0,0)
+                        }
+
+                        to {
+                            opacity: 1;
+                            transform: none
+                        }
+                    }
+
+                    .beae-mode-fadeInRight {
+                        animation-name: fadeInRight
+                    }
+
+                    @keyframes fadeInUp {
+                        from {
+                            opacity: 0;
+                            transform: translate3d(0,100%,0)
+                        }
+
+                        to {
+                            opacity: 1;
+                            transform: none
+                        }
+                    }
+
+                    .beae-mode-fadeInUp {
+                        animation-name: fadeInUp
+                    }
+
+                    @keyframes lightSpeedIn {
+                        from {
+                            transform: translate3d(100%,0,0) skewX(-30deg);
+                            opacity: 0
+                        }
+
+                        60% {
+                            transform: skewX(20deg);
+                            opacity: 1
+                        }
+
+                        80% {
+                            transform: skewX(-5deg);
+                            opacity: 1
+                        }
+
+                        to {
+                            transform: none;
+                            opacity: 1
+                        }
+                    }
+
+                    .beae-mode-lightSpeedIn {
+                        animation-name: lightSpeedIn;
+                        animation-timing-function: ease-out
+                    }
+
+                    @keyframes rotateIn {
+                        from {
+                            transform-origin: center;
+                            transform: rotate3d(0,0,1,-200deg);
+                            opacity: 0
+                        }
+
+                        to {
+                            transform-origin: center;
+                            transform: none;
+                            opacity: 1
+                        }
+                    }
+
+                    .beae-mode-rotateIn {
+                        animation-name: rotateIn
+                    }
+
+                    @keyframes rotateInDownLeft {
+                        from {
+                            transform-origin: left bottom;
+                            transform: rotate3d(0,0,1,-45deg);
+                            opacity: 0
+                        }
+
+                        to {
+                            transform-origin: left bottom;
+                            transform: none;
+                            opacity: 1
+                        }
+                    }
+
+                    .beae-mode-rotateInDownLeft {
+                        animation-name: rotateInDownLeft
+                    }
+
+                    @keyframes rotateInDownRight {
+                        from {
+                            transform-origin: right bottom;
+                            transform: rotate3d(0,0,1,45deg);
+                            opacity: 0
+                        }
+
+                        to {
+                            transform-origin: right bottom;
+                            transform: none;
+                            opacity: 1
+                        }
+                    }
+
+                    .beae-mode-rotateInDownRight {
+                        animation-name: rotateInDownRight
+                    }
+
+                    @keyframes rotateInUpLeft {
+                        from {
+                            transform-origin: left bottom;
+                            transform: rotate3d(0,0,1,45deg);
+                            opacity: 0
+                        }
+
+                        to {
+                            transform-origin: left bottom;
+                            transform: none;
+                            opacity: 1
+                        }
+                    }
+
+                    .beae-mode-rotateInUpLeft {
+                        animation-name: rotateInUpLeft
+                    }
+
+                    @keyframes rotateInUpRight {
+                        from {
+                            transform-origin: right bottom;
+                            transform: rotate3d(0,0,1,-90deg);
+                            opacity: 0
+                        }
+
+                        to {
+                            transform-origin: right bottom;
+                            transform: none;
+                            opacity: 1
+                        }
+                    }
+
+                    .beae-mode-rotateInUpRight {
+                        animation-name: rotateInUpRight
+                    }
+
+                    @keyframes rollIn {
+                        from {
+                            opacity: 0;
+                            transform: translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)
+                        }
+
+                        to {
+                            opacity: 1;
+                            transform: none
+                        }
+                    }
+
+                    .beae-mode-rollIn {
+                        animation-name: rollIn
+                    }
+
+                    @keyframes zoomIn {
+                        from {
+                            opacity: 0;
+                            transform: scale3d(.3,.3,.3)
+                        }
+
+                        50% {
+                            opacity: 1
+                        }
+                    }
+
+                    .beae-mode-zoomIn {
+                        animation-name: zoomIn
+                    }
+
+                    @keyframes zoomInDown {
+                        from {
+                            opacity: 0;
+                            transform: scale3d(.1,.1,.1) translate3d(0,-1000px,0);
+                            animation-timing-function: cubic-bezier(.55,.055,.675,.19)
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: scale3d(.475,.475,.475) translate3d(0,60px,0);
+                            animation-timing-function: cubic-bezier(.175,.885,.32,1)
+                        }
+                    }
+
+                    .beae-mode-zoomInDown {
+                        animation-name: zoomInDown
+                    }
+
+                    @keyframes zoomInLeft {
+                        from {
+                            opacity: 0;
+                            transform: scale3d(.1,.1,.1) translate3d(-1000px,0,0);
+                            animation-timing-function: cubic-bezier(.55,.055,.675,.19)
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: scale3d(.475,.475,.475) translate3d(10px,0,0);
+                            animation-timing-function: cubic-bezier(.175,.885,.32,1)
+                        }
+                    }
+
+                    .beae-mode-zoomInLeft {
+                        animation-name: zoomInLeft
+                    }
+
+                    @keyframes zoomInRight {
+                        from {
+                            opacity: 0;
+                            transform: scale3d(.1,.1,.1) translate3d(1000px,0,0);
+                            animation-timing-function: cubic-bezier(.55,.055,.675,.19)
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: scale3d(.475,.475,.475) translate3d(-10px,0,0);
+                            animation-timing-function: cubic-bezier(.175,.885,.32,1)
+                        }
+                    }
+
+                    .beae-mode-zoomInRight {
+                        animation-name: zoomInRight
+                    }
+
+                    @keyframes zoomInUp {
+                        from {
+                            opacity: 0;
+                            transform: scale3d(.1,.1,.1) translate3d(0,1000px,0);
+                            animation-timing-function: cubic-bezier(.55,.055,.675,.19)
+                        }
+
+                        60% {
+                            opacity: 1;
+                            transform: scale3d(.475,.475,.475) translate3d(0,-60px,0);
+                            animation-timing-function: cubic-bezier(.175,.885,.32,1)
+                        }
+                    }
+
+                    .beae-mode-zoomInUp {
+                        animation-name: zoomInUp
+                    }
+
+                    @keyframes slideInDown {
+                        from {
+                            transform: translate3d(0,-100%,0);
+                            visibility: visible
+                        }
+
+                        to {
+                            transform: translate3d(0,0,0)
+                        }
+                    }
+
+                    .beae-mode-slideInDown {
+                        animation-name: slideInDown
+                    }
+
+                    @keyframes slideInLeft {
+                        from {
+                            transform: translate3d(-100%,0,0);
+                            visibility: visible
+                        }
+
+                        to {
+                            transform: translate3d(0,0,0)
+                        }
+                    }
+
+                    .beae-mode-slideInLeft {
+                        animation-name: slideInLeft
+                    }
+
+                    @keyframes slideInRight {
+                        from {
+                            transform: translate3d(100%,0,0);
+                            visibility: visible
+                        }
+
+                        to {
+                            transform: translate3d(0,0,0)
+                        }
+                    }
+
+                    .beae-mode-slideInRight {
+                        animation-name: slideInRight
+                    }
+
+                    @keyframes slideInUp {
+                        from {
+                            transform: translate3d(0,100%,0);
+                            visibility: visible
+                        }
+
+                        to {
+                            transform: translate3d(0,0,0)
+                        }
+                    }
+
+                    .beae-mode-slideInUp {
+                        animation-name: slideInUp
+                    }
+
+                    .beae-mode-animation-grow {
+                        transition-duration: .3s;
+                        transition-property: transform
+                    }
+
+                    .beae-mode-animation-grow:active,.beae-mode-animation-grow:focus,.beae-mode-animation-grow:hover {
+                        transform: scale(1.1)
+                    }
+
+                    .beae-mode-animation-shrink {
+                        transition-duration: .3s;
+                        transition-property: transform
+                    }
+
+                    .beae-mode-animation-shrink:active,.beae-mode-animation-shrink:focus,.beae-mode-animation-shrink:hover {
+                        transform: scale(0.9)
+                    }
+
+                    @keyframes beae-mode-animation-pulse {
+                        25% {
+                            transform: scale(1.1)
+                        }
+
+                        75% {
+                            transform: scale(0.9)
+                        }
+                    }
+
+                    .beae-mode-animation-pulse:active,.beae-mode-animation-pulse:focus,.beae-mode-animation-pulse:hover {
+                        animation-name: beae-mode-animation-pulse;
+                        animation-duration: 1s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite
+                    }
+
+                    @keyframes beae-mode-animation-pulse-grow {
+                        to {
+                            transform: scale(1.1)
+                        }
+                    }
+
+                    .beae-mode-animation-pulse-grow:active,.beae-mode-animation-pulse-grow:focus,.beae-mode-animation-pulse-grow:hover {
+                        animation-name: beae-mode-animation-pulse-grow;
+                        animation-duration: .3s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate
+                    }
+
+                    @keyframes beae-mode-animation-pulse-shrink {
+                        to {
+                            transform: scale(0.9)
+                        }
+                    }
+
+                    .beae-mode-animation-pulse-shrink:active,.beae-mode-animation-pulse-shrink:focus,.beae-mode-animation-pulse-shrink:hover {
+                        animation-name: beae-mode-animation-pulse-shrink;
+                        animation-duration: .3s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate
+                    }
+
+                    @keyframes beae-mode-animation-push {
+                        50% {
+                            transform: scale(0.8)
+                        }
+
+                        100% {
+                            transform: scale(1)
+                        }
+                    }
+
+                    .beae-mode-animation-push:active,.beae-mode-animation-push:focus,.beae-mode-animation-push:hover {
+                        animation-name: beae-mode-animation-push;
+                        animation-duration: .3s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: 1
+                    }
+
+                    @keyframes beae-mode-animation-pop {
+                        50% {
+                            transform: scale(1.2)
+                        }
+                    }
+
+                    .beae-mode-animation-pop:active,.beae-mode-animation-pop:focus,.beae-mode-animation-pop:hover {
+                        animation-name: beae-mode-animation-pop;
+                        animation-duration: .3s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: 1
+                    }
+
+                    .beae-mode-animation-bounce-in {
+                        transition-duration: .5s
+                    }
+
+                    .beae-mode-animation-bounce-in:active,.beae-mode-animation-bounce-in:focus,.beae-mode-animation-bounce-in:hover {
+                        transform: scale(1.2);
+                        transition-timing-function: cubic-bezier(0.47,2.02,.31,-.36)
+                    }
+
+                    .beae-mode-animation-bounce-out {
+                        transition-duration: .5s
+                    }
+
+                    .beae-mode-animation-bounce-out:active,.beae-mode-animation-bounce-out:focus,.beae-mode-animation-bounce-out:hover {
+                        transform: scale(0.8);
+                        transition-timing-function: cubic-bezier(0.47,2.02,.31,-.36)
+                    }
+
+                    .beae-mode-animation-rotate {
+                        transition-duration: .3s;
+                        transition-property: transform
+                    }
+
+                    .beae-mode-animation-rotate:active,.beae-mode-animation-rotate:focus,.beae-mode-animation-rotate:hover {
+                        transform: rotate(4deg)
+                    }
+
+                    .beae-mode-animation-grow-rotate {
+                        transition-duration: .3s;
+                        transition-property: transform
+                    }
+
+                    .beae-mode-animation-grow-rotate:active,.beae-mode-animation-grow-rotate:focus,.beae-mode-animation-grow-rotate:hover {
+                        transform: scale(1.1) rotate(4deg)
+                    }
+
+                    .beae-mode-animation-float {
+                        transition-duration: .3s;
+                        transition-property: transform;
+                        transition-timing-function: ease-out
+                    }
+
+                    .beae-mode-animation-float:active,.beae-mode-animation-float:focus,.beae-mode-animation-float:hover {
+                        transform: translateY(-8px)
+                    }
+
+                    .beae-mode-animation-sink {
+                        transition-duration: .3s;
+                        transition-property: transform;
+                        transition-timing-function: ease-out
+                    }
+
+                    .beae-mode-animation-sink:active,.beae-mode-animation-sink:focus,.beae-mode-animation-sink:hover {
+                        transform: translateY(8px)
+                    }
+
+                    @keyframes beae-mode-animation-bob {
+                        0% {
+                            transform: translateY(-8px)
+                        }
+
+                        50% {
+                            transform: translateY(-4px)
+                        }
+
+                        100% {
+                            transform: translateY(-8px)
+                        }
+                    }
+
+                    @keyframes beae-mode-animation-bob-float {
+                        100% {
+                            transform: translateY(-8px)
+                        }
+                    }
+
+                    .beae-mode-animation-bob:active,.beae-mode-animation-bob:focus,.beae-mode-animation-bob:hover {
+                        animation-name: beae-mode-animation-bob-float,beae-mode-animation-bob;
+                        animation-duration: .3s,1.5s;
+                        animation-delay: 0s,.3s;
+                        animation-timing-function: ease-out,ease-in-out;
+                        animation-iteration-count: 1,infinite;
+                        animation-fill-mode: forwards;
+                        animation-direction: normal,alternate
+                    }
+
+                    @keyframes beae-mode-animation-hang {
+                        0% {
+                            transform: translateY(8px)
+                        }
+
+                        50% {
+                            transform: translateY(4px)
+                        }
+
+                        100% {
+                            transform: translateY(8px)
+                        }
+                    }
+
+                    @keyframes beae-mode-animation-hang-sink {
+                        100% {
+                            transform: translateY(8px)
+                        }
+                    }
+
+                    .beae-mode-animation-hang:active,.beae-mode-animation-hang:focus,.beae-mode-animation-hang:hover {
+                        animation-name: beae-mode-animation-hang-sink,beae-mode-animation-hang;
+                        animation-duration: .3s,1.5s;
+                        animation-delay: 0s,.3s;
+                        animation-timing-function: ease-out,ease-in-out;
+                        animation-iteration-count: 1,infinite;
+                        animation-fill-mode: forwards;
+                        animation-direction: normal,alternate
+                    }
+
+                    .beae-mode-animation-skew {
+                        transition-duration: .3s;
+                        transition-property: transform
+                    }
+
+                    .beae-mode-animation-skew:active,.beae-mode-animation-skew:focus,.beae-mode-animation-skew:hover {
+                        transform: skew(-10deg)
+                    }
+
+                    .beae-mode-animation-skew-forward {
+                        transition-duration: .3s;
+                        transition-property: transform;
+                        transform-origin: 0 100%
+                    }
+
+                    .beae-mode-animation-skew-forward:active,.beae-mode-animation-skew-forward:focus,.beae-mode-animation-skew-forward:hover {
+                        transform: skew(-10deg)
+                    }
+
+                    .beae-mode-animation-skew-backward {
+                        transition-duration: .3s;
+                        transition-property: transform;
+                        transform-origin: 0 100%
+                    }
+
+                    .beae-mode-animation-skew-backward:active,.beae-mode-animation-skew-backward:focus,.beae-mode-animation-skew-backward:hover {
+                        transform: skew(10deg)
+                    }
+
+                    @keyframes beae-mode-animation-wobble-vertical {
+                        16.65% {
+                            transform: translateY(8px)
+                        }
+
+                        33.3% {
+                            transform: translateY(-6px)
+                        }
+
+                        49.95% {
+                            transform: translateY(4px)
+                        }
+
+                        66.6% {
+                            transform: translateY(-2px)
+                        }
+
+                        83.25% {
+                            transform: translateY(1px)
+                        }
+
+                        100% {
+                            transform: translateY(0)
+                        }
+                    }
+
+                    .beae-mode-animation-wobble-vertical:active,.beae-mode-animation-wobble-vertical:focus,.beae-mode-animation-wobble-vertical:hover {
+                        animation-name: beae-mode-animation-wobble-vertical;
+                        animation-duration: 1s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: 1
+                    }
+
+                    @keyframes beae-mode-animation-wobble-horizontal {
+                        16.65% {
+                            transform: translateX(8px)
+                        }
+
+                        33.3% {
+                            transform: translateX(-6px)
+                        }
+
+                        49.95% {
+                            transform: translateX(4px)
+                        }
+
+                        66.6% {
+                            transform: translateX(-2px)
+                        }
+
+                        83.25% {
+                            transform: translateX(1px)
+                        }
+
+                        100% {
+                            transform: translateX(0)
+                        }
+                    }
+
+                    .beae-mode-animation-wobble-horizontal:active,.beae-mode-animation-wobble-horizontal:focus,.beae-mode-animation-wobble-horizontal:hover {
+                        animation-name: beae-mode-animation-wobble-horizontal;
+                        animation-duration: 1s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: 1
+                    }
+
+                    @keyframes beae-mode-animation-wobble-to-bottom-right {
+                        16.65% {
+                            transform: translate(8px,8px)
+                        }
+
+                        33.3% {
+                            transform: translate(-6px,-6px)
+                        }
+
+                        49.95% {
+                            transform: translate(4px,4px)
+                        }
+
+                        66.6% {
+                            transform: translate(-2px,-2px)
+                        }
+
+                        83.25% {
+                            transform: translate(1px,1px)
+                        }
+
+                        100% {
+                            transform: translate(0,0)
+                        }
+                    }
+
+                    .beae-mode-animation-wobble-to-bottom-right:active,.beae-mode-animation-wobble-to-bottom-right:focus,.beae-mode-animation-wobble-to-bottom-right:hover {
+                        animation-name: beae-mode-animation-wobble-to-bottom-right;
+                        animation-duration: 1s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: 1
+                    }
+
+                    @keyframes beae-mode-animation-wobble-to-top-right {
+                        16.65% {
+                            transform: translate(8px,-8px)
+                        }
+
+                        33.3% {
+                            transform: translate(-6px,6px)
+                        }
+
+                        49.95% {
+                            transform: translate(4px,-4px)
+                        }
+
+                        66.6% {
+                            transform: translate(-2px,2px)
+                        }
+
+                        83.25% {
+                            transform: translate(1px,-1px)
+                        }
+
+                        100% {
+                            transform: translate(0,0)
+                        }
+                    }
+
+                    .beae-mode-animation-wobble-to-top-right:active,.beae-mode-animation-wobble-to-top-right:focus,.beae-mode-animation-wobble-to-top-right:hover {
+                        animation-name: beae-mode-animation-wobble-to-top-right;
+                        animation-duration: 1s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: 1
+                    }
+
+                    @keyframes beae-mode-animation-wobble-top {
+                        16.65% {
+                            transform: skew(-12deg)
+                        }
+
+                        33.3% {
+                            transform: skew(10deg)
+                        }
+
+                        49.95% {
+                            transform: skew(-6deg)
+                        }
+
+                        66.6% {
+                            transform: skew(4deg)
+                        }
+
+                        83.25% {
+                            transform: skew(-2deg)
+                        }
+
+                        100% {
+                            transform: skew(0)
+                        }
+                    }
+
+                    .beae-mode-animation-wobble-top {
+                        transform-origin: 0 100%
+                    }
+
+                    .beae-mode-animation-wobble-top:active,.beae-mode-animation-wobble-top:focus,.beae-mode-animation-wobble-top:hover {
+                        animation-name: beae-mode-animation-wobble-top;
+                        animation-duration: 1s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: 1
+                    }
+
+                    @keyframes beae-mode-animation-wobble-bottom {
+                        16.65% {
+                            transform: skew(-12deg)
+                        }
+
+                        33.3% {
+                            transform: skew(10deg)
+                        }
+
+                        49.95% {
+                            transform: skew(-6deg)
+                        }
+
+                        66.6% {
+                            transform: skew(4deg)
+                        }
+
+                        83.25% {
+                            transform: skew(-2deg)
+                        }
+
+                        100% {
+                            transform: skew(0)
+                        }
+                    }
+
+                    .beae-mode-animation-wobble-bottom {
+                        transform-origin: 100% 0
+                    }
+
+                    .beae-mode-animation-wobble-bottom:active,.beae-mode-animation-wobble-bottom:focus,.beae-mode-animation-wobble-bottom:hover {
+                        animation-name: beae-mode-animation-wobble-bottom;
+                        animation-duration: 1s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: 1
+                    }
+
+                    @keyframes beae-mode-animation-wobble-skew {
+                        16.65% {
+                            transform: skew(-12deg)
+                        }
+
+                        33.3% {
+                            transform: skew(10deg)
+                        }
+
+                        49.95% {
+                            transform: skew(-6deg)
+                        }
+
+                        66.6% {
+                            transform: skew(4deg)
+                        }
+
+                        83.25% {
+                            transform: skew(-2deg)
+                        }
+
+                        100% {
+                            transform: skew(0)
+                        }
+                    }
+
+                    .beae-mode-animation-wobble-skew:active,.beae-mode-animation-wobble-skew:focus,.beae-mode-animation-wobble-skew:hover {
+                        animation-name: beae-mode-animation-wobble-skew;
+                        animation-duration: 1s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: 1
+                    }
+
+                    @keyframes beae-mode-animation-buzz {
+                        50% {
+                            transform: translateX(3px) rotate(2deg)
+                        }
+
+                        100% {
+                            transform: translateX(-3px) rotate(-2deg)
+                        }
+                    }
+
+                    .beae-mode-animation-buzz:active,.beae-mode-animation-buzz:focus,.beae-mode-animation-buzz:hover {
+                        animation-name: beae-mode-animation-buzz;
+                        animation-duration: .15s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite
+                    }
+
+                    @keyframes beae-mode-animation-buzz-out {
+                        10% {
+                            transform: translateX(3px) rotate(2deg)
+                        }
+
+                        20% {
+                            transform: translateX(-3px) rotate(-2deg)
+                        }
+
+                        30% {
+                            transform: translateX(3px) rotate(2deg)
+                        }
+
+                        40% {
+                            transform: translateX(-3px) rotate(-2deg)
+                        }
+
+                        50% {
+                            transform: translateX(2px) rotate(1deg)
+                        }
+
+                        60% {
+                            transform: translateX(-2px) rotate(-1deg)
+                        }
+
+                        70% {
+                            transform: translateX(2px) rotate(1deg)
+                        }
+
+                        80% {
+                            transform: translateX(-2px) rotate(-1deg)
+                        }
+
+                        90% {
+                            transform: translateX(1px) rotate(0)
+                        }
+
+                        100% {
+                            transform: translateX(-1px) rotate(0)
+                        }
+                    }
+
+                    .beae-mode-animation-buzz-out:active,.beae-mode-animation-buzz-out:focus,.beae-mode-animation-buzz-out:hover {
+                        animation-name: beae-mode-animation-buzz-out;
+                        animation-duration: .75s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: 1
+                    }
+                
+                .beae-image-hover-mode {
+                    opacity:0;
+                    z-index:-1;
+                    position:absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    max-width:100%;
+                    max-height:100%;
+                    transition:inherit;
+                }
+                
+                .beae-microelement__image[hover-mode="true"]:hover .beae-image-hover-mode{
+                    opacity:1;
+                    z-index:2
+                }
+                .beae-microelement__image[hover-mode="true"]{
+                    
+                    position:relative
+                }
+                .beae-microelement__image[hover-mode="true"]:hover > [image-mode] {
+                    opacity:0;
+                }
+                .beae-microelement__image[hover-mode="true"] > [image-mode] {
+                    transition:inherit;
+                }
+            
+                .beae-microelement-price--badges{
+                    display:none
+                }
+                .beae-microelement-price--badges-sale,
+                .beae-microelement-price--badges-sold-out{
+                    display:none;
+                }
+                .beae-product-single__price--sale{
+                    font-size: 30px;
+                    color: rgb(26, 27, 24);
+                    display:inline-flex;
+                    line-height: initial;
+                }
+                .beae-product-single__price--regular{
+                    text-decoration: line-through;
+                    color: #6B7280;
+                    display:inline-flex;
+                }
+                .beae-microelement-price--badges-sale{
+                    color:red;
+                    line-height: initial;
+                }
+                .beae-product-single__price-container .beae-microelement-price--prices{
+                    display:inline-flex;
+                    align-items: center;
+                    justify-content:center;
+                    gap:10px;
+                }
+                .beae-product-single__price-container {
+                    display:flex;
+                    flex-direction:column;
+                }
+                .beae-microelement-price--badges-sale,
+                .beae-microelement-price--badges-sold-out{
+                    margin-left: 12px;
+                    padding: 2px 8px;
+                    border-radius: 50px;
+                }
+                .beae-microelement-price--badges-sold-out{
+                    line-height: initial;
+                }
+                .beae-microelement-price--prices {
+                    display: flex;
+                }
+                .beae-product-single__price-wrapper .beae-product-single__price-container .core__micro--wrapper {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                }
+                
+            
+.beae-core.beae-0w8glugi{width: 100%;}@media screen and (max-width: 767px) {.beae-core.beae-0w8glugi{width: 100%;}}.beae-core.beae-t7pulh4i .beae-products__layout-grid{grid-template-columns: repeat(3,1fr);}.beae-core.beae-t7pulh4i .beae-products__layout-grid {column-gap: 30px;row-gap: 30px;}@media screen and (max-width: 1024px) {.beae-core.beae-t7pulh4i .beae-products__layout-grid{grid-template-columns: repeat(2,1fr);}.beae-core.beae-t7pulh4i .beae-products__layout-grid {column-gap: 30px;row-gap: 30px;}}@media screen and (max-width: 767px) {.beae-core.beae-t7pulh4i .beae-products__layout-grid{grid-template-columns: repeat(2,1fr);}.beae-core.beae-t7pulh4i .beae-products__layout-grid {column-gap: 20px;row-gap: 20px;}}.beae-core.beae-t7pulh4i .beae-product-item{border-style: none;}.beae-core.beae-t7pulh4i .beae-product-item:hover{border-style: solid;border-color: var(--beae-global-colors-primary);}.beae-core.beae-t7pulh4i{} .beae-core.beae-t7pulh4i a:empty,.beae-core.beae-t7pulh4i ul:empty,.beae-core.beae-t7pulh4i dl:empty,.beae-core.beae-t7pulh4i div:empty,.beae-core.beae-t7pulh4i section:empty,.beae-core.beae-t7pulh4i article:empty,.beae-core.beae-t7pulh4i p:empty,.beae-core.beae-t7pulh4i h1:empty,.beae-core.beae-t7pulh4i h2:empty,.beae-core.beae-t7pulh4i h3:empty,.beae-core.beae-t7pulh4i h4:empty,.beae-core.beae-t7pulh4i h5:empty,.beae-core.beae-t7pulh4i h6:empty{
+  display: none;
+}@media screen and (max-width: 2880px) and (min-width: 1024px) {.beae-core.beae-t7pulh4i .core__micro--title_heading{display: block;}}@media screen and (max-width: 1024px) and (min-width: 767px) {.beae-core.beae-t7pulh4i .core__micro--title_heading{display: block;}}@media screen and (max-width: 767px) and (min-width: 320px) {.beae-core.beae-t7pulh4i .core__micro--title_heading{display: block;}}@media screen and (max-width: 2880px) and (min-width: 1024px) {.beae-core.beae-t7pulh4i .core__micro--button_view_more{display: block;}}@media screen and (max-width: 1024px) and (min-width: 767px) {.beae-core.beae-t7pulh4i .core__micro--button_view_more{display: block;}}@media screen and (max-width: 767px) and (min-width: 320px) {.beae-core.beae-t7pulh4i .core__micro--button_view_more{display: block;}}@media screen and (max-width: 2880px) and (min-width: 1024px) {.beae-core.beae-t7pulh4i .core__micro--image{display: block;}}@media screen and (max-width: 1024px) and (min-width: 767px) {.beae-core.beae-t7pulh4i .core__micro--image{display: block;}}@media screen and (max-width: 767px) and (min-width: 320px) {.beae-core.beae-t7pulh4i .core__micro--image{display: block;}}.beae-core.beae-t7pulh4i .beae-product-badge .beae-product-badge--sale{color: #ffffff;background: #da5f39;padding-right: 8px;padding-left: 8px;}.beae-core.beae-t7pulh4i .beae-product-badge .beae-product-badge--sold-out{color: #000000;background: #ffffff;padding-right: 8px;padding-left: 8px;}.beae-core.beae-t7pulh4i .beae-product-media--ratio{padding-bottom: 100%;}.beae-core.beae-t7pulh4i .beae-product-badge{align-items: flex-start;top: 0px;bottom: unset;left: 0px;right: unset;transform: unset;}@media screen and (max-width: 2880px) and (min-width: 1024px) {.beae-core.beae-t7pulh4i .core__micro--title_product{display: block;}}@media screen and (max-width: 1024px) and (min-width: 767px) {.beae-core.beae-t7pulh4i .core__micro--title_product{display: block;}}@media screen and (max-width: 767px) and (min-width: 320px) {.beae-core.beae-t7pulh4i .core__micro--title_product{display: block;}}.beae-core.beae-t7pulh4i .core__micro--title_product .beae-microelement__title{text-align: left;font-size: 15px;} .beae-core.beae-t7pulh4i .core__micro--price{margin-bottom: 10px !important;}@media screen and (max-width: 2880px) and (min-width: 1024px) {.beae-core.beae-t7pulh4i .core__micro--price{display: block;}}@media screen and (max-width: 1024px) and (min-width: 767px) {.beae-core.beae-t7pulh4i .core__micro--price{display: block;}}@media screen and (max-width: 767px) { .beae-core.beae-t7pulh4i .core__micro--price{margin-bottom: 0px !important;}}@media screen and (max-width: 767px) and (min-width: 320px) {.beae-core.beae-t7pulh4i .core__micro--price{display: block;}}.beae-core.beae-t7pulh4i .beae-product-price--sale,.beae-core.beae-t7pulh4i .beae-product-price--sale a{font-size: 17px;font-weight: 600;}.beae-core.beae-t7pulh4i .beae-product-single__price--regular,.beae-core.beae-t7pulh4i .beae-product--compare-at-price{color: rgba(10, 30, 35, 0.5);}.beae-core.beae-t7pulh4i .core__microelement--price .core__micro--wrapper{justify-content: flex-start;}.beae-core.beae-t7pulh4i .beae-microelement-price--badges{display: true !important;}@media screen and (max-width: 2880px) and (min-width: 1024px) {.beae-core.beae-t7pulh4i .core__micro--button_add_to_cart_btn{display: block;}}@media screen and (max-width: 1024px) and (min-width: 767px) {.beae-core.beae-t7pulh4i .core__micro--button_add_to_cart_btn{display: block;}}@media screen and (max-width: 767px) and (min-width: 320px) {.beae-core.beae-t7pulh4i .core__micro--button_add_to_cart_btn{display: block;}}.beae-core.beae-n3zx4wic>[data-shape-position="top"] svg{width: 100%;height: 100px;}.beae-core.beae-n3zx4wic>[data-shape-position="bottom"] svg{width: 100%;height: 100px;}
+/**BEAE-INSERT-CSS**/.beae-section > div.core__row--columns{max-width: 1200px;}.beae-column>div.core__column--wrapper{padding: 20px;}div.core__blocks--body>div.beae-block+div.beae-block.elmspace{margin-top: 20px;}:root{--beae-global-colors-primary:#008060;--beae-global-colors-secondary:#111827;--beae-global-colors-text:#6B7280;--beae-global-colors-accent:#2c6ecb;}/**BEAE-INSERT-CSS**/

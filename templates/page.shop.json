@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "9c3bf204-d61e-4342-8ec2-b435254a3c74": {
+      "type": "medium-header-banner",
+      "settings": {
+        "img_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0746\/0657\/5901\/files\/image-min-min_b0e1763b-bde9-4ba7-9ea9-c939bbe46c06.png?v=1682149815",
+        "vertical_txt": "Our products",
+        "title1": "Our products are",
+        "title2": "our pride",
+        "title3": "and we stand behind them",
+        "paragraph": "IPP Solutions Canada offers an exclusive portfolio of high quality products along with fast and efficient service directly in Canada."
+      }
+    },
+    "cff753db-41a5-49e9-a82b-bce1fc60f49e": {
+      "type": "beae-shop",
+      "settings": {
+      }
+    },
+    "77d39a69-12b7-4191-8f79-1ac366def173": {
+      "type": "custom-contact-form",
+      "settings": {
+        "text_1": "Our contacts",
+        "text_2": "Do you have an",
+        "text_3": "interesting question?",
+        "text_4": "Headquarters",
+        "text_5": "30-800 Route Carter Sainte-Marie, Qc G6E 0B2"
+      }
+    },
+    "56f60fcb-4b3d-4976-91d0-3f1ecae10ca3": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cyclone",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9c3bf204-d61e-4342-8ec2-b435254a3c74",
+    "cff753db-41a5-49e9-a82b-bce1fc60f49e",
+    "77d39a69-12b7-4191-8f79-1ac366def173",
+    "56f60fcb-4b3d-4976-91d0-3f1ecae10ca3"
+  ]
+}

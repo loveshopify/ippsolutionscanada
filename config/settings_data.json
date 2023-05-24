@@ -4,15 +4,15 @@
     "logo_width": 90,
     "favicon": "shopify:\/\/shop_images\/webclip_a8cfc361-74cb-4996-b493-84c57f10ab03.svg",
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
+    "colors_accent_1": "#010524",
     "gradient_accent_1": "",
     "colors_accent_2": "#334fb4",
     "gradient_accent_2": "",
-    "colors_text": "#121212",
+    "colors_text": "#010524",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
-    "colors_background_2": "#f3f3f3",
+    "colors_background_2": "#010524",
     "gradient_background_2": "",
     "type_header_font": "muli_n4",
     "heading_scale": 100,
@@ -43,7 +43,7 @@
     "inputs_shadow_horizontal_offset": 0,
     "inputs_shadow_vertical_offset": 4,
     "inputs_shadow_blur": 5,
-    "card_style": "standard",
+    "card_style": "card",
     "card_image_padding": 0,
     "card_text_alignment": "left",
     "card_color_scheme": "background-2",
@@ -146,46 +146,21 @@
 
     ],
     "blocks": {
-      "12793297677437526120": {
-        "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/custom_translations\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
+      "9670189827046205946": {
+        "type": "shopify:\/\/apps\/translate-my-store\/blocks\/app-block\/b927a799-be04-4b97-9efb-5c8f0290a68e",
         "disabled": false,
         "settings": {
         }
       },
-      "8765772171712610185": {
-        "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/language_switcher\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
-        "disabled": true,
+      "18228966181090706294": {
+        "type": "shopify:\/\/apps\/upsell-cross-sell-selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "disabled": false,
         "settings": {
-          "enable_language_switcher": true,
-          "enable_country_region_switcher": false,
-          "use_modal_dialog": false,
-          "use_currency_for_region": false,
-          "switcher_position": "custom",
-          "show_flags": true,
-          "language_label": "language-name",
-          "language_country_mapping": "",
-          "countries_filter": "",
-          "custom_css": "",
-          "header_switcher_reference_element": "",
-          "header_switcher_relative_position": "before",
-          "mobile_menu_switcher_reference_element": "",
-          "mobile_switcher_relative_position": "before",
-          "header_switcher_border_width": 0,
-          "switcher_viewport_position": "top-right",
-          "custom_position_spacing_top": "55",
-          "custom_position_spacing_right": "20",
-          "custom_position_spacing_bottom": "20",
-          "custom_position_spacing_left": "20",
-          "custom_switcher_font_size": "14px",
-          "custom_switcher_border_width": 1,
-          "custom_switcher_text_color": "#5c5c5c",
-          "custom_switcher_background_color": "#ffffff",
-          "custom_switcher_border_color": "#000000"
         }
       },
-      "2140405073069974119": {
-        "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/language_detection\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
-        "disabled": true,
+      "11007581849700305021": {
+        "type": "shopify:\/\/apps\/beae-flexible-page-builder\/blocks\/app-embed\/baa13179-0731-48ec-b878-b49964bcc901",
+        "disabled": false,
         "settings": {
         }
       }
@@ -334,5 +309,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "a:empty,ul:empty,dl:empty,div:empty,section:empty,article:empty,p:empty,h1:empty,h2:empty,h3:empty,h4:empty,h5:empty,h6:empty {display: none;}"
+    ]
   }
 }

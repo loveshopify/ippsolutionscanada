@@ -7,24 +7,45 @@
       "settings": {
         "link_services": "shopify:\/\/pages\/services",
         "link_product": "shopify:\/\/pages\/products",
-        "link_contact": "shopify:\/\/pages\/contact-us"
+        "link_contact": "shopify:\/\/pages\/contact-us",
+        "link_one": "\/",
+        "link_one_label": "Home",
+        "link_two": "\/pages\/services",
+        "link_two_label": "Services",
+        "link_three": "\/pages\/products",
+        "link_three_label": "Products",
+        "link_four": "\/pages\/shop",
+        "link_four_label": "Shop",
+        "link_five": "\/pages\/contact",
+        "link_five_label": "Contact Us",
+        "text_1": "IPP Solutions Canada Inc distributes aqueduct and sewer cleaning,               inspection and rehabilitation products across Canada.",
+        "text_2": "30-800 Route Carter Sainte-Marie, Qc G6E 0B2",
+        "text_3": "1-418-809-9309",
+        "text_4": "Subscribe",
+        "text_5": "to our news and",
+        "text_6": "get a discount",
+        "text_7": "on the first service.",
+        "text_8": "Solutions Canada Inc. All Rights Reserved 2023."
       }
     },
     "footer": {
       "type": "footer",
+      "custom_css": [
+        ".color-accent-1 {background: #010524;}"
+      ],
       "settings": {
-        "color_scheme": "background-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
-        "show_social": true,
-        "enable_country_selector": true,
-        "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 36,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "accent-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },

@@ -12,19 +12,18 @@
                 height="19"
                 srcset="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/IPP_SoluCa_logo_textejaune-p-1080.png?v=1682054902"
                 alt="" class="image-ruc" style="will-change: opacity; opacity: 1;"></a>
-            <p class="footer-brand-description-2">IPP Solutions Canada Inc distributes aqueduct and sewer cleaning,
-              inspection and rehabilitation products across Canada.</p>
+            <p class="footer-brand-description-2">{{section.settings.text_1}}</p>
           </div>
         </div>
         <div class="footer-info-wrapper">
-          <p class="footer-brand-description-2">30-800 Route Carter Sainte-Marie, Qc G6E 0B2</p>
-          <a href="tel:1-418-809-9309" class="footer-link-3">1-418-809-9309</a>
+          <p class="footer-brand-description-2">{{section.settings.text_2}}</p>
+          <a href="tel:1-418-809-9309" class="footer-link-3">{{section.settings.text_3}}</a>
           <a href="mailto:info@ippsolutionscanada.com" class="footer-link-3">info@ippsolutionscanada.com</a>
         </div>
       </div>
       <div class="footer-form-wrapper">
-        <h2 class="footer-form-title"><span class="blue-h2-text footer">Subscribe</span> to our news and <span
-            class="blue-h2-text footer">get a discount</span> on the first service.</h2>
+        <h2 class="footer-form-title"><span class="blue-h2-text footer">{{section.settings.text_4}}</span> {{section.settings.text_5}}<span
+            class="blue-h2-text footer"> {{section.settings.text_6}} </span>{{section.settings.text_7}}</h2>
         <div class="w-form">
           {%- form 'customer', id: 'ContactFooter', class: 'footer-email-form' -%}
         
@@ -57,9 +56,9 @@
               name="commit"
               id="Subscribe"
               aria-label="{{ 'newsletter.button_label' | t }}"
-             style="min-width: 180px;"
+             style="white-space: nowrap; width: auto;" 
             >
-            Start Now
+          {{section.settings.button_5}}
             </button>
           {%-endform -%}
           <div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
@@ -73,15 +72,21 @@
     </div>
     <div data-w-id="7ce617ec-d939-c9a7-048b-7fd81a04dc40" class="footer-links-wrapper-2"
       style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-      <a href="/" aria-current="page" class="footer-link-3 w--current">Home</a>
-      <a href="{{section.settings.link_services}}" class="footer-link-3">Services</a>
-      <a href="{{section.settings.link_product}}" class="footer-link-3">Products</a>
-      <a href="{{section.settings.link_contact}}" class="footer-link-3">Contact Us</a>
+<!--       <a href="/" aria-current="page" class="footer-link-3 w--current"> {{section.settings.button_1}}</a>
+      <a href="{{section.settings.link_services}}" class="footer-link-3"> {{section.settings.button_2}}</a>
+      <a href="{{section.settings.link_product}}" class="footer-link-3"> {{section.settings.button_3}}</a>
+      <a href="{{section.settings.link_contact}}" class="footer-link-3"> {{section.settings.button_4}}</a> -->
+
+      <a href="{{section.settings.link_one}}" class="footer-link-3"> {{section.settings.link_one_label}}</a>
+      <a href="{{section.settings.link_two}}" class="footer-link-3"> {{section.settings.link_two_label}}</a>
+      <a href="{{section.settings.link_three}}" class="footer-link-3"> {{section.settings.link_three_label}}</a>
+      <a href="{{section.settings.link_four}}" class="footer-link-3"> {{section.settings.link_four_label}}</a>
+      <a href="{{section.settings.link_five}}" class="footer-link-3"> {{section.settings.link_five_label}}</a>
     </div>
     <div data-w-id="7ce617ec-d939-c9a7-048b-7fd81a04dc4b" class="footer-rights-wrapper-2"
       style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
       <div class="footer-copyright-2">© <span  class="link-2 w--current">IPP</span>
-        Solutions Canada Inc. All Rights Reserved 2023.</div>
+        {{section.settings.text_8}}</div>
     </div>
   </div>
 </div>
@@ -99,24 +104,115 @@
   "tag": "section",
   "class": "section",
   "settings": [
-  {
+    {
     "type": "url",
-    "id": "link_services",
-    "label": "Link Services"
+    "id": "link_one",
+    "label": "Link One"
+  },
+  {
+    "type": "text",
+    "id": "link_one_label",
+    "default": "Your text",
+    "label": "Link One Label"
   },
   {
     "type": "url",
-    "id": "link_product",
-    "label": "Link Products"
+    "id": "link_two",
+    "label": "Link Two"
+  },
+    {
+      "type": "text",
+    "id": "link_two_label",
+    "default": "Your text",
+    "label": "Link Two Label"
   },
   {
     "type": "url",
-    "id": "link_contact",
-    "label": "Link Contact us"
-  }
+    "id": "link_three",
+    "label": "Link Three"
+  },
+    {
+      "type": "text",
+    "id": "link_three_label",
+    "default": "Your text",
+    "label": "Link Three Label"
+  },
+     {
+    "type": "url",
+    "id": "link_four",
+    "label": "Link Four"
+  },
+    {
+      "type": "text",
+    "id": "link_four_label",
+    "default": "Your text",
+    "label": "Link Four Label"
+  },
+  {
+    "type": "url",
+    "id": "link_five",
+    "label": "Link Five"
+  },
+    {
+      "type": "text",
+    "id": "link_five_label",
+    "default": "Your text",
+    "label": "Link Five Label"
+  },
+
+    
+    {
+          "type": "text",
+          "id": "text_1",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "text_2",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "text_3",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "text_4",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "text_5",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "text_6",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "text_7",
+          "default": "Your text",
+          "label": "Text"
+      
+        }, {
+          "type": "text",
+          "id": "text_8",
+          "default": "Your text",
+          "label": "Text"
+      
+        }
   ],
   "blocks": [
-    
+   
   ],
   "presets": [
     {

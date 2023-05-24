@@ -2,12 +2,13 @@
   <div data-w-id="dced4357-aad1-6919-ad7f-a373e9a3e81e" style="opacity:1" class="banner-slider-container">
     <div class="home-1-banner">
       <div class="main-title-wrapper">
-        <h6 class=" vertical_inscription vertical_header vertical-title">Our company</h6>
-        <h1 class="home-1-title hero-home">Distributing <span class="text-span-5">aqueduct, sewer cleaning, inspection and rehabilitation</span> products.<span class="blue-h1-title"></span></h1>
+        <h6 class=" vertical_inscription vertical_header vertical-title">{{section.settings.button_label_1}}</h6>
+        <h1 class="home-1-title hero-home">{{section.settings.button_label_2}} <span class="text-span-5">{{section.settings.button_label_3}}</span> {{section.settings.button_label_4}}<span class="blue-h1-title"></span></h1>
       </div>
-      <p class="white-description-home-1">IPP Solutions Canada Inc distributes aqueduct and sewer cleaning, inspection and rehabilitation products across Canada.</p>
+      <p class="white-description-home-1">{{section.settings.button_label_5}}</p>
       <div class="home-buttons-wrapper">
-        <a href="{{section.settings.link}}" class="primary-blue-button white-text">Contact Us</a>
+        
+        <a href="{{section.settings.link}}" class="primary-blue-button white-text">{{section.settings.button_label_6}}</a>
       </div>
     </div>
   </div>
@@ -23,7 +24,56 @@
     "type": "url",
     "id": "link",
     "label": "Button link"
-  }
+  },
+    {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Our company",
+          "label": "Our company"
+      
+        },
+    {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "Our company",
+          "label": "Our company"
+      
+        },
+    {
+          "type": "text",
+          "id": "button_label_3",
+          "default": "Distributing",
+          "label": "Distributing"
+      
+        },
+    {
+          "type": "text",
+          "id": "button_label_4",
+          "default": "Text 4",
+          "label": "Text 4"
+      
+        },
+    {
+          "type": "text",
+          "id": "button_label_5",
+          "default": "Text ",
+          "label": "Text 5"
+      
+        },
+    {
+          "type": "text",
+          "id": "button_label_6",
+          "default": "Text-6",
+          "label": "Text 6"
+      
+        },
+    {
+          "type": "text",
+          "id": "button_label_7",
+          "default": "Link Button",
+          "label": "Link Button"
+      
+        }
   ],
   "blocks": [
     

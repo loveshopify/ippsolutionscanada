@@ -127,6 +127,11 @@
     "b3dd4cb1-ff88-463d-af05-1787be7164e9": {
       "type": "custom-contact-form",
       "settings": {
+        "text_1": "Our contacts",
+        "text_2": "Do you have an",
+        "text_3": "interesting question?",
+        "text_4": "Headquarters",
+        "text_5": "30-800 Route Carter Sainte-Marie, Qc G6E 0B2"
       }
     }
   },

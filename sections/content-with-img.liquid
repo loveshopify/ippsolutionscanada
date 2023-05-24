@@ -24,35 +24,31 @@
         {% if section.settings.paragraph2 %}
           <p data-w-id="1bc9ea59-60b6-49a2-022a-11240335c666" style="opacity:1" class="description-about-us"> {{section.settings.paragraph2}}</p>
         {% endif %}
-
         {% if section.settings.list-tem1 != blank %}
         <div class="list-item-wrapper">
           <div data-w-id="4b9e967a-0ab3-eee6-b68a-40b4ffb6a961" style="opacity:1;  display: block;" class="yellow-point"></div>
-          <p data-w-id="7cc19f14-e607-998e-2e94-234d11e3e008" style="opacity:1" class="list-item-text ">{{section.settings.list-tem1}}</p>
+          <p data-w-id="7cc19f14-e607-998e-2e94-234d11e3e008" style="opacity:1; width: calc(100% - 10px);" class="list-item-text ">{{section.settings.list-tem1}}</p>
         </div>
         {% endif %}
         {% if section.settings.list-tem2 != blank %}
         <div class="list-item-wrapper">
-          <div data-w-id="2e2c30c8-7c8d-973b-1938-11c2e91922c1" style="opacity:1;  display: block;" class="yellow-point"></div>
-          <p data-w-id="2e2c30c8-7c8d-973b-1938-11c2e91922c2" style="opacity:1" class="list-item-text ">{{section.settings.list-tem2}}</p>
-        </div>
+          <div data-w-id="2e2c30c8-7c8d-973b-1938-11c2e91922c1" style="opacity:1;  display: block;" class="yellow-point ">
+            </div>
+            <p data-w-id="2e2c30c8-7c8d-973b-1938-11c2e91922c2" style="opacity:1; width: calc(100% - 10px);" class="list-item-text ">{{section.settings.list-tem2}}</p>
+          
+           </div>
         {% endif %}
-       
-
         {% if section.settings.button_link != blank %}
             <div class="link-wrapper-with-line">
               <a href="{{section.settings.button_link}}" class="primary-blue-button">{{section.settings.btn-title}}</a>
             </div>
         {% endif %}
-       
       </div>
       <div class="about-us-wrap right">
         <div data-w-id="1bc9ea59-60b6-49a2-022a-11240335c674" style="opacity:1" class="div-block-18">
           {% if section.settings.image != blank %}
-          
           <img src="{{section.settings.image  | img_url: '900x'}}" alt="{{section.settings.image.alt}}" loading="lazy" class="capabilities-image">
           {% endif %}
-         
         </div>
       </div>
     </div>

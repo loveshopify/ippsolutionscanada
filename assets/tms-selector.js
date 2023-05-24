@@ -1,0 +1,37 @@
+
+    // **BEGIN** Hextom TMS Integration - DO NOT MODIFY
+      var hextom_tms = {
+        selectorInsertType:  "float",
+        regionType:  "region_name_currency_symbol",
+        floatingPosition: "bottom_right",
+        floatingPaddingHorizontal:  15,
+        floatingPaddingVertical:  15,
+        availableLocalesById: {},
+        availableLocales: [],
+        primaryLocaleById: {},
+        merchantSelectedLocale: "shop_base",
+        hasFlag: "no",
+        selectorFlagMap: {'fr': 'fr', 'en': 'en'},
+        displayType: "language_code",
+        fontColor: "#ffffff",
+        backgroundColor: "#0355f2",
+        backgroundOpacity: "1.0",
+        buttonFontColor: "#FFFFFF",
+        buttonBackgroundColor: "#000000",
+        selectorType: "market_language",
+        selectorStyle: "dropdown",
+        hasFlagRegion: "yes",    
+        defaultRegion: "US",    
+        primaryRegionById: {},    
+        availableRegionsByCode: {},    
+        availableRegions: [],
+        primaryDomain: "",
+        popupEnable: false,
+        popupTextColor: "#000000",
+        popupBgColor: "#FFFFFF",
+        popupBtnTextColor: "#FFFFFF",
+        popupBtnBgColor: "#000000",
+        regions: [{"name": "United States", "code": "US", "currency": {"code": "USD", "symbol": "$"}, "languages": {"English": {"name": "English", "native_name": "English", "code": "en", "default": true}, "Fran\u00e7ais": {"name": "Fran\u00e7ais (French)", "native_name": "Fran\u00e7ais", "code": "fr", "default": false}}, "primary": true}],
+      };
+    // **END** Hextom TMS Integration - DO NOT MODIFY
+    

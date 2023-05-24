@@ -25,6 +25,9 @@
     "header": {
       "type": "header",
       "disabled": true,
+      "custom_css": [
+        "span {color: #ffff; font-size: 15px; font-family: \"Muli\";}"
+      ],
       "settings": {
         "link": "shopify:\/\/pages\/contact-us",
         "logo_position": "middle-left",
@@ -32,7 +35,7 @@
         "menu_type_desktop": "mega",
         "sticky_header_type": "always",
         "show_line_separator": true,
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "enable_country_selector": false,
         "enable_language_selector": true,
         "mobile_logo_position": "left",
@@ -44,7 +47,17 @@
     "b7f34c0e-a6b0-4459-ac91-bf3c69ec147f": {
       "type": "custon-nav",
       "settings": {
-        "include_margins": true
+        "include_margins": true,
+        "menu_1": "Home",
+        "menu_1_link": "\/",
+        "menu_2": "Products",
+        "menu_2_link": "\/pages\/products",
+        "menu_3": "Services",
+        "menu_3_link": "\/pages\/services",
+        "menu_4": "Shop",
+        "menu_4_link": "\/pages\/shop",
+        "menu_5": "Contact Us",
+        "menu_5_link": "\/pages\/contact-us"
       }
     }
   },

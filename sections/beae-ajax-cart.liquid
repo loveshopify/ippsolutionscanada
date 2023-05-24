@@ -1,0 +1,940 @@
+ 
+{% style %}
+.beae-ajax-cart.beae-popup-cart-custom {
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	width: 100%;
+	max-width: 770px;
+	margin: auto;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1), 0px 4px 2px rgba(255, 255, 255, 0.06);
+	padding: 20px;
+	box-sizing: border-box;
+	max-height: 800px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+    transition: all .2s ease;
+}
+.beae-cart-popup::before {
+    content: ' ';
+    position: absolute;
+    background: #000000b3 !important;
+    inset: 0;-----
+}
+.beae-cart-drawer-animation-open .beae-ajax-cart.beae-popup-cart-custom {
+    transform: translateX(0);
+}
+.beae-cart-popup-animation .beae-ajax-cart.beae-popup-cart-custom{
+    opacity:0;
+    transform: translate(-50%,-50%) scale(0.5);
+}
+.beae-cart-popup-animation-open.beae-cart-popup-animation .beae-ajax-cart.beae-popup-cart-custom {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.beae-ajax-cart::-webkit-scrollbar {
+	width: 1px;
+}
+
+
+
+.beae-ajax-cart-header {
+	margin-bottom: 30px;
+    position:relative
+}
+
+.beae-ajax-cart-header>h3 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	color: #111827;
+	margin: 0px;
+}
+
+.beae-ajax-cart-body {
+	padding: 32px 0px;
+}
+
+
+
+.beae-ajax-cart-items::-webkit-scrollbar {
+	width: 2px;
+}
+
+.beae-ajax-cart-total {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+
+
+
+
+.beae-ajax-cart-line-item-dl {
+	margin-top: 10px;
+}
+
+.beae-ajax-cart-line-item-product-option {
+	display: flex;
+}
+
+.beae-ajax-cart-line-item-product-option dt {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.beae-ajax-cart-line-item-product-option dd {
+	margin-left: 5px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+
+
+
+span.beae-ajax-cart-visually-hidden {
+	display: none;
+}
+.beae-ajax-cart-line-item-quantity-input-drawer,
+.beae-ajax-cart-line-item-quantity-input {
+    width: 120px;
+    height: 36px;
+    text-align: center;
+    padding: 0px 40px;
+    border: 0;
+}
+.beae-ajax-cart-line-item-quantity-wrapper {
+    position:relative;
+    border:1px solid;
+    display:flex;
+}
+.beae-ajax-cart-line-item-quantity-input-drawer::-webkit-inner-spin-button,
+.beae-ajax-cart-line-item-quantity-input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.beae-ajax-cart-line-item-quantity-input-drawer:focus-visible,
+.beae-ajax-cart-line-item-quantity-input:focus-visible {
+	outline: unset;
+	outline-offset: unset;
+	box-shadow: unset;
+}
+.beae-ajax-cart-line-item-quantity {
+    display:flex;
+    align-items:center
+}
+.beae-ajax-cart-line-item-quantity-button-drawer,
+.beae-ajax-cart-line-item-quantity-button {
+    width: 40px;
+    max-height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    opacity: 1;
+    color: black;
+    min-height: unset;
+}
+.beae-ajax-cart-line-item-quantity-button-drawer svg,
+.beae-ajax-cart-line-item-quantity-button svg {
+    width:12px;
+    height: 12px
+}
+.beae-ajax-cart-line-item-quantity-button-drawer[name="minus"],
+.beae-ajax-cart-line-item-quantity-button[name="minus"] {
+    left: 0;
+    right:auto
+}
+.beae-ajax-cart-line-item-quantity-button-drawer[name="plus"],
+.beae-ajax-cart-line-item-quantity-button[name="plus"] {
+    right: 0;
+    left:auto
+}
+
+.beae-ajax-cart-line-item-price {
+	font-style: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #111827;
+    margin-top:8px
+}
+.beae-ajax-cart-line-item-title:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.2rem;
+}
+
+
+.beae-ajax-cart-line-item-title {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #111827;
+	text-decoration: none;
+}
+
+.beae-ajax-cart-line-item-details>*:empty {
+	display: none;
+}
+
+.beae-ajax-cart-line-item-button-remove {
+    width: 36px;
+    padding: 10px;
+    display: inline-grid;
+    position: relative;
+    color: #000000;
+    margin-left: 10px;
+}
+
+
+
+.beae-ajax-cart-line-item-cart-item-totals {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.beae-ajax-cart-line-item-media {
+	max-width: 100px;
+    min-width:80px;
+    padding-right:10px
+}
+
+
+
+.beae-ajax-cart-line-item-details>* {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+.beae-ajax-cart-totals__subtotal {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: #111827;
+	margin: 0;
+}
+
+.beae-ajax-cart-totals__subtotal-value {
+	margin: 0;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.beae-ajax-cart-tax-note {
+	margin-top: 12px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: #374151;
+	display: block;
+    text-align:right
+}
+
+.beae-ajax-cart-view-details {
+	display: block;
+	width: 100%;
+}
+
+.beae-ajax-cart-view-details-button {
+	display: block;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #111827;
+	padding: 12px 24px;
+	background: #FFFFFF;
+	border: 2px solid #111827;
+	box-sizing: border-box;
+	width: 100%;
+	text-decoration: none;
+}
+
+.beae-ajax-cart-checkout-wrapper {
+	display: flex;
+	width: 100%;
+	margin-top: 12px;
+    gap:10px
+}
+
+.beae-ajax-cart-continue-shopping-button {
+    cursor:pointer;
+	background: #111827;
+	padding: 12px 24px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #FFFFFF;
+	border: none;
+	width: 100%;
+}
+
+.beae-ajax-cart-continue-shopping-full {
+	width: 100%;
+}
+
+
+
+.beae-ajax-cart-close-button {
+	position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: unset;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.1rem;
+    transition: text-decoration-thickness ease .1s;
+}
+.beae-ajax-cart-close-button:hover {
+    text-decoration-thickness: 0.2rem;
+}
+
+.beae-ajax-cart-text-area {
+	background: #F3F4F6;
+	min-height: 70px;
+	padding: 8px 16px;
+}
+
+.beae-ajax-cart-text-area::placeholder {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+	color: #6B7280;
+}
+
+.beae-line-item-blink {
+	background: #ccc;
+	animation: beaeBlink 1s;
+	animation-iteration-count: 3;
+}
+
+.beae-ajax-cart-note-field {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+
+.beae-ajax-cart-continue-shopping {
+		width: 100%;
+        display:none
+	}
+
+
+.beae-ajax-cart-note-field {
+	margin-bottom: 14px;
+}
+
+
+/* width */
+.beae-ajax-cart-items::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+/* Track */
+.beae-ajax-cart-items::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  
+}
+ 
+/* Handle */
+.beae-ajax-cart-items::-webkit-scrollbar-thumb {
+  background: #888; 
+  
+}
+
+/* Handle on hover */
+.beae-ajax-cart-items::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@keyframes beaeBlink {
+	50% {
+		border-color: #fff;
+	}
+}
+.beae-ajax-cart-footer {
+    border-top: 1px solid #E5E7EB;
+    padding-top: 10px;
+}
+.beae-ajax-cart-body--table {
+    border-spacing: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    
+}
+.beae-ajax-cart-table-th {
+    font-size: 12px;
+    letter-spacing: .13rem;
+    font-weight: 500;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB !important;
+    padding-bottom:10px;
+}
+.beae-ajax-cart-line-item td {
+    vertical-align: top;
+    padding-top: 20px;
+}
+.beae-ajax-cart-line-item-details {
+    max-width:300px
+}
+.beae-ajax-cart-totals {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.beae-ajax-cart-close-button svg {
+    display: none;
+    width: 16px;
+    height:16px
+}
+
+.beae-cart-drawer .beae-ajax-cart-close-button svg {
+    display: flex;
+}
+.beae-cart-drawer .beae-ajax-cart-close-button span {
+    display: none;
+}
+.beae-cart-drawer .beae-ajax-cart {
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 370px;
+    transform: translateX(100%);
+    max-height: unset;
+    transition: all .2s ease;
+}
+.beae-cart-drawer .beae-ajax-cart-desc {
+    display:none
+}
+
+.beae-cart-drawer .beae-heading-quantity {
+    display: none
+}
+.beae-cart-drawer .beae-heading-total {
+    text-align:right
+}
+
+.beae-cart-drawer .beae-ajax-cart-line-item-quantity,
+.beae-ajax-cart-line-item-quantity-drawer{
+    display: none
+}
+.beae-cart-drawer .beae-ajax-cart-line-item-quantity-drawer{
+    display:flex;
+    align-items:center;
+    margin-top:10px
+}
+.beae-cart-drawer .beae-ajax-cart-contents {
+    display:flex;
+    flex-direction: column;
+    height:100%
+}
+.beae-cart-drawer .beae-ajax-cart-wrapper,
+.beae-cart-drawer .beae-ajax-cart-container {
+    height:100%
+}
+.beae-cart-drawer .beae-ajax-cart-footer{
+    margin-top:auto
+}
+.beae-ajax-cart-no-item {
+    padding-top:10px;
+    text-align:center
+}
+.beae-ajax-cart-close-button-footer {
+    cursor: pointer;
+    background: #111827;
+    padding: 12px 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    flex: 1;
+}
+.discounts__discount.discounts__discount--end {
+    text-align:right;
+}
+.discounts__discount.discounts__discount--end svg{
+    width:16px;
+    height:16px;
+}
+@media only screen and (max-width: 991px) {
+	.beae-cart-popup-animation .beae-popup-cart-custom.beae-ajax-cart {
+        max-width: 90%;
+        padding: 15px;
+    }
+	.beae-ajax-cart-line-item-quantity-input {
+		max-width: 100%;
+	}
+}
+@media only screen and (max-width: 480px) {
+    .beae-popup-cart-custom.beae-ajax-cart {
+        max-width: 90% !important;
+        padding: 15px !important;
+    }
+	.beae-ajax-cart-line-item {
+		max-width: 260px;
+	}
+    .beae-heading-quantity {
+        display: none
+    }
+    .beae-ajax-cart-line-item-quantity {
+        display: none
+    }
+    .beae-ajax-cart-line-item-quantity-drawer {
+        display: flex;
+        margin-top:10px
+    }
+    .beae-ajax-cart-checkout-wrapper {
+        flex-direction: column
+    }
+    .beae-ajax-cart-table-th.beae-heading-total{
+        text-align:right
+    }
+    .beae-ajax-cart-line-item-details {
+        padding-right:62px;
+    }
+    .beae-ajax-cart-line-item-price-wrapper {
+        position:relative
+    }
+    .beae-total-item-price .beae-ajax-cart-line-item-price {
+        position:absolute;
+        right:0
+    }
+    .beae-ajax-cart-totals {
+        justify-content: space-between
+    }
+    .beae-ajax-cart-tax-note {
+        text-align:center
+    }
+    .beae-ajax-cart-close-button span {
+        display:none
+    }
+    .beae-ajax-cart-close-button svg {
+        display:flex
+    }
+}
+
+{% endstyle %}
+{% assign key = canonical_url | split: 'key=' | last | split: '&' | first | replace: '%3a',':'%}
+{%assign type =  canonical_url | split: 'type=' | last | split: '&' | first%}
+<div class="beae-ajax-cart beae-popup-cart-custom">
+<div class="beae-ajax-cart-wrapper">
+<div class="beae-ajax-cart-container">
+   <form action="{{ routes.cart_url }}" class="beae-ajax-cart-contents" method="post">
+      <div class="beae-ajax-cart-header">
+        <h3>{{ 'sections.beae-ajax-cart.title' | t }}</h3>
+        <p class="beae-ajax-cart-desc">{{'sections.beae-ajax-cart.message' | t: count: cart.item_count}}</p>
+        <button type="button" class="beae-ajax-cart-close-button" data-beae-action="close">
+            <span>Continue shopping</span>
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+                <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+                </path>
+            </svg>
+        </button>
+      </div>
+      <table class="beae-ajax-cart-body--table">
+        <thead>
+            <tr class="beae-ajax-cart-table-thead">
+              <th class="beae-ajax-cart-table-th" colspan="2" scope="col">{{ 'sections.beae-ajax-cart.headings.product' | t }}</th>
+              <th class="beae-ajax-cart-table-th" colspan="1" scope="col"><span class="beae-heading-quantity">{{ 'sections.beae-ajax-cart.headings.quantity' | t }}</span></th>
+              <th class="beae-ajax-cart-table-th beae-heading-total" colspan="1" scope="col">{{ 'sections.beae-ajax-cart.headings.total' | t }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if cart.item_count > 0 %}
+                {%- for line_item in cart.items -%}
+                    <tr class="beae-ajax-cart-line-item" data-id="{{line_item.id}}" data-key="{{line_item.key}}">
+                        <td>
+                            <div class="beae-ajax-cart-line-item-media">
+                                {% if line_item.image %}
+                                  <img class="cart-item__image"
+                                    src="{{ line_item.image | img_url: '150x' }}"
+                                    alt="{{ line_item.image.alt | escape }}"
+                                    loading="lazy"
+                                    width="75"
+                                    height="{{ 75 | divided_by: line_item.image.aspect_ratio | ceil }}"
+                                  >
+                                {% endif %}
+                              </div>
+                        </td>
+                        <td>
+                            <div class="beae-ajax-cart-line-item-details">
+                                <a href="{{ line_item.url }}" class="beae-ajax-cart-line-item-title">{{ line_item.product.title | escape }}</a>
+                                <div class="beae-ajax-cart-line-item-prices">
+                                    <div class="beae-ajax-cart-line-item-price-wrapper">
+                                        {%- if line_item.original_price != line_item.final_price -%}
+                                            <dl class="beae-ajax-cart-line-item-discounted-prices">
+                                                <dt class="beae-ajax-cart-visually-hidden">
+                                                {{ 'sections.beae-ajax-cart.price.regular_price' | t }}
+                                                </dt>
+                                                <dd>
+                                                    <s class="beae-ajax-cart-line-item-old-price price price--end">
+                                                        {{ line_item.original_price | money }}
+                                                    </s>
+                                                </dd>
+                                                <dt class="beae-ajax-cart-line-item-visually-hidden">
+                                                    Sale price
+                                                </dt>
+                                                <dd class="beae-ajax-cart-line-item-price">
+                                                    {{ line_item.final_price | money }}
+                                                </dd>
+                                            </dl>
+                        
+                                            {%- if line_item.variant.available and line_item.unit_price_measurement -%}
+                                                <div class="beae-ajax-cart-line-item-unit-price">
+                                                    <span class="beae-ajax-cart-line-item-visually-hidden">
+                                                    Unit price
+                                                    </span>
+                                                    {{ line_item.variant.unit_price | money }}
+                                                    <span aria-hidden="true">/</span>
+                                                    <span class="beae-ajax-cart-line-item-visually-hidden">&nbsp;{{ 'sections.beae-ajax-cart.unit_price_separator' | t }}&nbsp;</span>
+                                                    {%- if line_item.variant.unit_price_measurement.reference_value != 1 -%}
+                                                    {{- line_item.variant.unit_price_measurement.reference_value -}}
+                                                    {%- endif -%}
+                                                    {{ line_item.variant.unit_price_measurement.reference_unit }}
+                                                </div>
+                                            {%- endif -%}
+                                        {%- else -%}
+                                            <span class="beae-ajax-cart-line-item-price">
+                                                {{ line_item.original_price | money }}
+                                            </span>
+                                        {%- endif -%}
+                                    </div>
+                                </div>
+                                <!-- <p class="beae-ajax-cart-line-item-vendor">{{ line_item.product.vendor }}</p> -->
+                                {%- if line_item.product.has_only_default_variant == false or line_item.properties.size != 0 or line_item.selling_plan_allocation != nil -%}
+                                    <dl class="beae-ajax-cart-line-item-dl">
+                                        {%- if line_item.product.has_only_default_variant == false -%}
+                                        {%- for option in line_item.options_with_values -%}
+                                            <div class="beae-ajax-cart-line-item-product-option">
+                                                <dt>{{ option.name }}: </dt>
+                                                <dd>{{ option.value }}</dd>
+                                            </div>
+                                        {%- endfor -%}
+                                        {%- endif -%}
+                
+                                        {%- for property in line_item.properties -%}
+                                        {%- assign property_first_char = property.first | slice: 0 -%}
+                                        {%- if property.last != blank and property_first_char != '_' -%}
+                                            <div class="beae-ajax-cart-line-item-product-option">
+                                                <dt>{{ property.first }}: </dt>
+                                                <dd>
+                                                    {%- if property.last contains '/uploads/' -%}
+                                                    <a href="{{ property.last }}" target="_blank">
+                                                        {{ property.last | split: '/' | last }}
+                                                    </a>
+                                                    {%- else -%}
+                                                    {{ property.last }}
+                                                    {%- endif -%}
+                                                </dd>
+                                            </div>
+                                        {%- endif -%}
+                                        {%- endfor -%}
+                                    </dl>
+                                    <p class="beae-ajax-cart-line-item-product-option">{{ line_item.selling_plan_allocation.selling_plan.name }}</p>
+                                {%- endif -%}
+                                <ul class="beae-ajax-cart-line-item-discounts beae-ajax-cart-line-item-list-unstyled" role="list" aria-label="Discounts">
+                                {%- for discount in line_item.discounts -%}
+                                    <li class="discounts__discount">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="beae-ajax-cart-icon beae-ajax-cart-icon-discount" viewBox="0 0 12 12">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0h3a2 2 0 012 2v3a1 1 0 01-.3.7l-6 6a1 1 0 01-1.4 0l-4-4a1 1 0 010-1.4l6-6A1 1 0 017 0zm2 2a1 1 0 102 0 1 1 0 00-2 0z" fill="currentColor" />
+                                    </svg>
+                                    {{ discount.title }}
+                                    </li>
+                                {%- endfor -%}
+                                </ul>
+                            </div>
+                            <div class="beae-ajax-cart-line-item-quantity beae-ajax-cart-line-item-quantity-drawer">
+                                <div class="beae-ajax-cart-line-item-quantity-wrapper">
+                                  <button class="beae-ajax-cart-line-item-quantity-button beae-ajax-cart-line-item-quantity-button-drawer" name="minus" type="button">
+                                    <span class="beae-ajax-cart-visually-hidden">{{ 'sections.beae-ajax-cart.quantity.decrease' | t: product: line_item.product.title | escape }}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" fill="none" viewBox="0 0 10 2">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M.5 1C.5.7.7.5 1 .5h8a.5.5 0 110 1H1A.5.5 0 01.5 1z" fill="currentColor" />
+                                    </svg>
+                                  </button>
+                                  <input class="beae-ajax-cart-line-item-quantity-input beae-ajax-cart-line-item-quantity-input-drawer"
+                                    type="number"
+                                    name="updates[]"
+                                    data-key="{{ line_item.key }}"
+                                    value="{{ line_item.quantity }}"
+                                    min="0"
+                                    aria-label="{{ 'sections.beae-ajax-cart.quantity.input_label' | t: product: line_item.product.title | escape }}"
+                                    id="beae-Quantity-{{ line_item.index | plus: 1 }}"
+                                    data-index="{{ line_item.index | plus: 1 }}"
+                                  >
+                                  <button class="beae-ajax-cart-line-item-quantity-button beae-ajax-cart-line-item-quantity-button-drawer" name="plus" type="button">
+                                    <span class="beae-ajax-cart-visually-hidden">{{ 'sections.beae-ajax-cart.quantity.increase' | t: product: line_item.product.title | escape }}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" fill="none" viewBox="0 0 10 10">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z" fill="currentColor" />
+                                    </svg>
+                                  </button>
+                                </div>
+                                <div class="beae-ajax-cart-line-item-remove">
+                                    <a data-id="{{line_item.id}}" href="{{ line_item.url_to_remove }}" data-key="{{line_item.key}}" class="beae-ajax-cart-line-item-button beae-ajax-cart-line-item-button-remove" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation" class="beae-ajax-cart-icon beae-ajax-cart-icon-remove">
+                                        <path d="M14 3h-3.53a3.07 3.07 0 00-.6-1.65C9.44.82 8.8.5 8 .5s-1.44.32-1.87.85A3.06 3.06 0 005.53 3H2a.5.5 0 000 1h1.25v10c0 .28.22.5.5.5h8.5a.5.5 0 00.5-.5V4H14a.5.5 0 000-1zM6.91 1.98c.23-.29.58-.48 1.09-.48s.85.19 1.09.48c.2.24.3.6.36 1.02h-2.9c.05-.42.17-.78.36-1.02zm4.84 11.52h-7.5V4h7.5v9.5z" fill="currentColor"/>
+                                        <path d="M6.55 5.25a.5.5 0 00-.5.5v6a.5.5 0 001 0v-6a.5.5 0 00-.5-.5zM9.45 5.25a.5.5 0 00-.5.5v6a.5.5 0 001 0v-6a.5.5 0 00-.5-.5z" fill="currentColor"/>
+                                      </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="beae-ajax-cart-line-item-quantity">
+                                <div class="beae-ajax-cart-line-item-quantity-wrapper">
+                                  <button class="beae-ajax-cart-line-item-quantity-button" name="minus" type="button">
+                                    <span class="beae-ajax-cart-visually-hidden">{{ 'sections.beae-ajax-cart.quantity.decrease' | t: product: line_item.product.title | escape }}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" fill="none" viewBox="0 0 10 2">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M.5 1C.5.7.7.5 1 .5h8a.5.5 0 110 1H1A.5.5 0 01.5 1z" fill="currentColor" />
+                                    </svg>
+                                  </button>
+                                  <input class="beae-ajax-cart-line-item-quantity-input"
+                                    type="number"
+                                    name="updates[]"
+                                    data-key="{{ line_item.key }}"
+                                    value="{{ line_item.quantity }}"
+                                    min="0"
+                                    aria-label="{{ 'sections.beae-ajax-cart.quantity.input_label' | t: product: line_item.product.title | escape }}"
+                                    id="beae-Quantity-{{ line_item.index | plus: 1 }}"
+                                    data-index="{{ line_item.index | plus: 1 }}"
+                                  >
+                                  <button class="beae-ajax-cart-line-item-quantity-button" name="plus" type="button">
+                                    <span class="beae-ajax-cart-visually-hidden">{{ 'sections.beae-ajax-cart.quantity.increase' | t: product: line_item.product.title | escape }}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" fill="none" viewBox="0 0 10 10">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z" fill="currentColor" />
+                                    </svg>
+                                  </button>
+                                </div>
+                                <div class="beae-ajax-cart-line-item-remove">
+                                    <a data-id="{{line_item.id}}" href="{{ line_item.url_to_remove }}" data-key="{{line_item.key}}" class="beae-ajax-cart-line-item-button beae-ajax-cart-line-item-button-remove" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation" class="beae-ajax-cart-icon beae-ajax-cart-icon-remove">
+                                        <path d="M14 3h-3.53a3.07 3.07 0 00-.6-1.65C9.44.82 8.8.5 8 .5s-1.44.32-1.87.85A3.06 3.06 0 005.53 3H2a.5.5 0 000 1h1.25v10c0 .28.22.5.5.5h8.5a.5.5 0 00.5-.5V4H14a.5.5 0 000-1zM6.91 1.98c.23-.29.58-.48 1.09-.48s.85.19 1.09.48c.2.24.3.6.36 1.02h-2.9c.05-.42.17-.78.36-1.02zm4.84 11.52h-7.5V4h7.5v9.5z" fill="currentColor"/>
+                                        <path d="M6.55 5.25a.5.5 0 00-.5.5v6a.5.5 0 001 0v-6a.5.5 0 00-.5-.5zM9.45 5.25a.5.5 0 00-.5.5v6a.5.5 0 001 0v-6a.5.5 0 00-.5-.5z" fill="currentColor"/>
+                                      </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="beae-ajax-cart-line-item-price-wrapper beae-total-item-price">
+                                {%- if line_item.original_line_price != line_item.final_line_price -%}
+                                    <dl class="beae-ajax-cart-line-item-discounted-prices">
+                                        <dt class="beae-ajax-cart-visually-hidden">
+                                        {{ 'products.product.price.sale_price' | t }}
+                                        </dt>
+                                        <dd class="beae-ajax-cart-line-item-price">
+                                        {{ line_item.final_line_price | money }}
+                                        </dd>
+                                    </dl>
+                                {%- else -%}
+                                    <span class="beae-ajax-cart-line-item-price">
+                                        {{ line_item.original_line_price | money }}
+                                    </span>
+                                {%- endif -%}
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="4" class="beae-ajax-cart-no-item">
+                        {{'sections.beae-ajax-cart.empty' | t }}  
+                    </td>
+                </tr>
+            {% endif %}
+        </tbody>
+      </table>
+      <div class="beae-ajax-cart-footer">
+     	
+
+      <div class="beae-ajax-cart-actions">
+        <div class="beae-ajax-cart-continue-shopping">
+          {%- if section.settings.show_cart_note or true -%}
+            <div class="beae-ajax-cart-note-field">
+              <label for="beae-ajax-cart-note">{{ 'sections.beae-ajax-cart.note' | t }}</label>
+              <textarea class="beae-ajax-cart-text-area beae-ajax-cart-field-input" rows="8" name="note" id="beae-ajax-cart-note" placeholder="{{ 'sections.beae-ajax-cart.note' | t }}">{{ cart.note }}</textarea>
+            </div>
+          {%- endif -%}
+          <button class="beae-ajax-cart-continue-shopping-button" data-beae-action="close">{{ 'sections.beae-ajax-cart.continue_shopping' | t }}</button>
+        </div>
+        <div class="beae-ajax-cart-continue-shopping-full">
+           <div class="beae-ajax-cart-footer-informations">
+          
+          <div>
+            <div class="beae-ajax-cart-js-contents">
+              <div class="beae-ajax-cart-totals">
+                <h3 class="beae-ajax-cart-totals__subtotal">{{ 'sections.beae-ajax-cart.subtotal' | t }}</h3>
+                <p class="beae-ajax-cart-totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+              </div>
+
+              <div>
+                {%- if cart.cart_level_discount_applications.size > 0 -%}
+                <ul class="discounts list-unstyled" role="list" aria-label="{{ 'sections.beae-ajax-cart.discount' | t }}">
+                  {%- for discount in cart.cart_level_discount_applications -%}
+                  <li class="discounts__discount discounts__discount--end">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="beae-ajax-cart-icon beae-ajax-cart-icon-discount" viewBox="0 0 12 12">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0h3a2 2 0 012 2v3a1 1 0 01-.3.7l-6 6a1 1 0 01-1.4 0l-4-4a1 1 0 010-1.4l6-6A1 1 0 017 0zm2 2a1 1 0 102 0 1 1 0 00-2 0z" fill="currentColor" />
+                     </svg>
+                    {{ discount.title }}
+                    (-{{ discount.total_allocated_amount | money }})
+                  </li>
+                  {%- endfor -%}
+                </ul>
+                {%- endif -%}
+              </div>
+
+              <small class="beae-ajax-cart-tax-note">
+                {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                {{ 'sections.beae-ajax-cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- elsif cart.taxes_included -%}
+                {{ 'sections.beae-ajax-cart.taxes_included_but_shipping_at_checkout' | t }}
+                {%- elsif shop.shipping_policy.body != blank -%}
+                {{ 'sections.beae-ajax-cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+                {%- else -%}
+                {{ 'sections.beae-ajax-cart.taxes_and_shipping_at_checkout' | t }}
+                {%- endif -%}
+              </small>
+            </div>
+
+
+            {%- if additional_checkout_buttons -%}
+            <div class="beae-ajax-cart-dynamic-checkout-buttons beae-ajax-cart-additional-checkout-buttons">
+              {{ content_for_additional_checkout_buttons }}
+            </div>
+            {%- endif -%}  
+          </div>
+        </div>
+        	<div class="beae-ajax-cart-checkout-wrapper">
+              {% comment %} <div class="beae-ajax-cart-agree-term">
+                <label for="beae-ajax-cart-agree-term-input">
+                	<input type="checkbox" id="beae-ajax-cart-agree-term-input" required="required" name="properties[agree]" />
+                  {{'sections.beae-ajax-cart.term' | t}}
+                </label>
+              </div> {% endcomment %}
+                    {% if cart.item_count > 0 %}
+                        <a href="{{routes.cart_url }}" class="beae-ajax-cart-view-details-button" data-beae-action="close">{{ 'sections.beae-ajax-cart.view_cart' | t }}</a>
+                        <button class="beae-ajax-cart-continue-shopping-button" name="checkout"{% if cart == empty %} disabled{% endif %}>{{ 'sections.beae-ajax-cart.checkout' | t }}</button>
+                    {% else %}
+                        <button type="button" class="beae-ajax-cart-close-button-footer" data-beae-action="close">
+                            Continue shopping
+                        </button>
+                    {% endif %}
+                {%- if additional_checkout_buttons -%}
+                <div class="beae-ajax-cart-dynamic-checkout-buttons beae-ajax-cart-additional-checkout-buttons">
+                    {{ content_for_additional_checkout_buttons }}
+                </div>
+                {%- endif -%}
+            </div>
+         </div>
+      </div>
+      </div>
+  </form>
+</div>
+</div>
+</div>
+
+{% schema %}
+{
+    "name": "Beae Ajax cart",
+    "settings": [
+      {
+        "type": "header",
+        "content": "The section generated by [Beae](https://www.beae.com).",
+        "info": "Beae provides tons of pre-built Layouts and Blocks/Sections and focus on the simplicity for content editing, to help the merchants easy to build a nice store with drag, sorting and edit content only. "
+      },
+      {
+        "type": "checkbox",
+        "id": "show_cart_note",
+        "default": false,
+        "label": "Show cart note"
+      }
+    ],
+    "locales": {
+      "en": {
+        "quantity": {
+          "label": "Quantity",
+          "input_label": "Quantity for {{ product }}",
+          "increase": "Increase quantity for {{ product }}",
+          "decrease": "Decrease quantity for {{ product }}"
+        },
+        "title": "Your cart",
+        "caption": "Cart items",
+        "remove_title": "Remove {{ title }}",
+        "subtotal": "Subtotal",
+        "new_subtotal": "New subtotal",
+        "note": "Order special instructions",
+        "checkout": "Checkout",
+        "empty": "Your cart is empty",
+		"term":"I agree with the terms and conditions",
+        "cart_error": "There was an error while updating your cart. Please try again.",
+        "cart_quantity_error_html": "You can only add [quantity] of this item to your cart.",
+        "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
+        "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
+        "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+        "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
+        "unit_price_separator": "per",
+        "view_cart":"View cart",
+        "headings": {
+          "product": "Product",
+          "price": "Price",
+          "total": "Total",
+          "quantity": "Quantity"
+        },
+        "update": "Update",
+        "price": {
+          "from_price_html": "From {{ price }}",
+          "regular_price": "Regular price",
+          "sale_price": "Sale price",
+          "unit_price": "Unit price"
+        },
+        "continue_shopping": "Continue shopping",
+		"message":{
+			"one":"{{count}} item in your cart",
+			"other":"{{count}} items in your cart"
+		}
+      }
+    }
+  }
+{% endschema %}
