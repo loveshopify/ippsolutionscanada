@@ -1,0 +1,93 @@
+<div class="section faq wf-section">
+  <div class="base-container w-container" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+    <div class="main-left-title-wrapper">
+      <!-- <h3 class="vertical_inscription heading-styling-h6">Read &nbsp;FAQ</h3>
+      <h2>IPP Solutions Canada, <span class="yellow-h2-text">customers frequently ask</span></h2>
+       -->
+      {% if section.settings.vertical_txt != blank %}
+      <h6 id="fr2" class="vertical_inscription _2">{{section.settings.vertical_txt}}</h6>
+      {% endif %}
+      <h2 class="section-title-h2" style="margin-left: 30px;"> 
+          {% if section.settings.title1 !=blank %}
+          {{section.settings.title1}}
+        {% endif %}
+        {% if section.settings.title2 !=blank %}
+          <span class="yellow-h2-text">{{section.settings.title2}}</span>
+        {% endif %}
+         </h2>
+   
+    </div>
+    {% if section.blocks.size > 0 %}
+      <div class="accordion-wrapper">
+        {% for block in section.blocks %}
+          <div class="accordion-wrap">
+            <div data-hover="false" data-delay="0" data-w-id="86120450-20af-ce42-3e9e-8e2d594ba2fa" style="border-color: rgb(242, 241, 241);" class="accordion-item w-dropdown">
+              <div class="accordion-toggle w-dropdown-toggle" id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+                <h3 class="accordion-title heading-styling-h5" style="color: rgb(1, 5, 36);">{{block.settings.block_title}}</h3>
+                <div class="accordion-arrow"></div>
+              </div>
+              <nav style="width: auto; " class="accordion-list w-dropdown-list" id="w-dropdown-list-1" aria-labelledby="w-dropdown-toggle-1">
+                <p class="accordion-list-content">{{block.settings.block_paragraph}}</p>
+              </nav>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  
+    </div>
+  </div>
+</div>
+<style>
+  .w-dropdown-list.w--open{
+  height: auto !important;
+
+}
+</style>
+{% schema %}
+{
+  "name": "Custom FAQ",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+  {
+    "type": "text",
+    "id": "vertical_txt",
+    "label": "Vertical text"
+  },
+  {
+    "type": "text",
+    "id": "title1",
+    "label": "Title, black"
+  },
+  {
+    "type": "text",
+    "id": "title2",
+    "label": "Title, yellow"
+  }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "block",
+      "settings": [
+      {
+        "type": "text",
+        "id": "block_title",
+        "label": "Block title"
+      },
+      {
+        "type": "textarea",
+        "id": "block_paragraph",
+        "label": "Block paragraph"
+      }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom FAQ"
+    }
+  ]
+}
+{% endschema %}

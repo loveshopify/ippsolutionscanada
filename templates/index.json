@@ -1,0 +1,168 @@
+{
+  "sections": {
+    "f291393d-fd72-40e7-b01e-cdcf788f8103": {
+      "type": "header-banner",
+      "settings": {
+        "link": "shopify:\/\/pages\/contact-us"
+      }
+    },
+    "3e61c4d9-6dab-4791-a2aa-c4c6832a7d17": {
+      "type": "text-section",
+      "settings": {
+      }
+    },
+    "01d1fab2-abb5-4d21-8a9e-da805e074c2a": {
+      "type": "content-with-img-black",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "",
+        "title2": "PipeCaster Pro,",
+        "title3": "Redefining Pipe Rehabilitation",
+        "paragraph": "With this SIPP (spray in place pipelining) technology, application is easy and can be done quickly.\n<br><br>\nWith the fast-set, spray applied, two component polyurea and expoxy resins, and no reinstatements, services can be promptly restored to the residential, commercial or industrial property.",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/PipeCasterProNoBG_web.webp",
+        "img-right_enable": false,
+        "yellow-txt_enable": false
+      }
+    },
+    "1c2fa52a-a682-44d7-b0f3-2fce3b8cbbf5": {
+      "type": "content-with-img",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "The Best",
+        "title2": "Chain Cutters,",
+        "title3": "Period.",
+        "paragraph1": "The Cyclone chain cutters are offered with 3\/8\", 5\/16\" and 1\/4\" cables and bring incredible performances and ruggedness at an unmatchable price point.",
+        "paragraph2": "",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/best-chain-cutters-1.png",
+        "img-left_enable": false,
+        "img_top_mob": true
+      }
+    },
+    "b1521f14-6523-4237-8348-0cbf9d6d3912": {
+      "type": "content-with-img-black",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "The Power of",
+        "title2": "Pan-and-Tilt",
+        "title3": "Cameras",
+        "paragraph": "The powerful pan-and-tilt cameras offered by CustomEyes Cameras are ruggedized. affortable and allow more plumbers to take advantage of this powerful technology.",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/56b5f4affa7480fb050035a5a7c9dc1a5ad14292-removebg-preview-min.png",
+        "img-right_enable": false,
+        "yellow-txt_enable": false
+      }
+    },
+    "392287e2-cb22-4b92-b7e0-cdbe290d58df": {
+      "type": "content-with-img",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "",
+        "title2": "Tougher-than-Nail",
+        "title3": "Nozzles",
+        "paragraph1": "The USB-USA nozzles, powered by their unique fluid mechanics within the nozzles help you get your hard jobs done right and keep on working job after job, saving you valuable time and money.",
+        "paragraph2": "",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/tougher-than-nai-nozzles-1.png",
+        "img-left_enable": false,
+        "img_top_mob": true
+      }
+    },
+    "f5b93a32-cbb9-4138-bea4-b78af54398e5": {
+      "type": "content-with-img-black",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "",
+        "title2": "Vetter",
+        "title3": "Pipe Sealing Bags",
+        "paragraph": "Vetter Pipe Sealing bags are the optimum solution when quick and reliable sealing of drainage is required. A big advantage of the sealing bags are their freely selectable contact pressure(on the pipe wall): from 0.5 bar to 2.5 bar\/7.25 psi to 36.25 psi.\n<br><br>\nThe areas of operation are, among others:",
+        "list-tem1": "Sealing off sewer pipelines during repair or maintenance work",
+        "list-tem2": "Avoiding sewage backflow at the source location during pipe bursts, flooding, sewer inspection, sewer cleaning, repair and maintenance work",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/kv_rohr_dichtkissen_01_600x6002x-p-500.png",
+        "img-right_enable": false,
+        "yellow-txt_enable": false
+      }
+    },
+    "c31278af-e111-4cff-b29e-2e9e4c894209": {
+      "type": "content-with-img",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "MwStop® <br>",
+        "title2": "Check Valve",
+        "title3": "",
+        "paragraph1": "MwStop® can be installed in virtually any pipe, even retrospectively, in just a few minutes and provides immediate effective protection against flooding, foreign bodies and annoying odours.",
+        "paragraph2": "The wide MwStop® range ensures that the right MwStop® model is available for every application, whether it is for backwater protection of the sewer system, for use in rainwater pipes or for preventing odour formation in mixed sewers.",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/Auslaufmontage-800x800.png",
+        "img-left_enable": false,
+        "img_top_mob": true
+      }
+    },
+    "334d677d-2c7c-417e-95f1-ee026f2aa0d0": {
+      "type": "big-banner",
+      "settings": {
+        "link": "shopify:\/\/pages\/contact-us"
+      }
+    },
+    "9fcd3bc2-816a-488b-9201-7908a889ede4": {
+      "type": "content-with-img",
+      "settings": {
+        "vertical_txt": "About US",
+        "title1": "Our company has years",
+        "title2": "of experience",
+        "title3": "",
+        "paragraph1": "IPP Solutions Canada was founded with the plumber in mind. We offer a wide range of drain cameras, chain cutters and cleaning nozzles as well as our exclusive and affordable Spray-In-Place Pipe (SIPP) technology offered by the PipeCaster Pro.",
+        "paragraph2": "",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/IPP_SoluCa_logo_textejaune-p-1080.png",
+        "img-left_enable": false,
+        "img_top_mob": false
+      }
+    },
+    "862cfaa9-49b0-4afc-8aa1-c00944a94994": {
+      "type": "blockquote-slider",
+      "settings": {
+      }
+    },
+    "2a95d08e-f58e-470e-aa88-2832337bec52": {
+      "type": "custom-contact-form",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "f291393d-fd72-40e7-b01e-cdcf788f8103",
+    "3e61c4d9-6dab-4791-a2aa-c4c6832a7d17",
+    "01d1fab2-abb5-4d21-8a9e-da805e074c2a",
+    "1c2fa52a-a682-44d7-b0f3-2fce3b8cbbf5",
+    "b1521f14-6523-4237-8348-0cbf9d6d3912",
+    "392287e2-cb22-4b92-b7e0-cdbe290d58df",
+    "f5b93a32-cbb9-4138-bea4-b78af54398e5",
+    "c31278af-e111-4cff-b29e-2e9e4c894209",
+    "334d677d-2c7c-417e-95f1-ee026f2aa0d0",
+    "9fcd3bc2-816a-488b-9201-7908a889ede4",
+    "862cfaa9-49b0-4afc-8aa1-c00944a94994",
+    "2a95d08e-f58e-470e-aa88-2832337bec52"
+  ]
+}

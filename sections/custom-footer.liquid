@@ -1,0 +1,127 @@
+<div class="footer-2 wf-section">
+  <div class="base-container-8 w-container">
+    <div data-w-id="7ce617ec-d939-c9a7-048b-7fd81a04dc16" class="footer-main-wrapper"
+      style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+      <div class="footer-content-wrapper">
+        <div class="footer-brand-wrapper-2">
+          <div class="footer-logo-wrapper-2">
+            <a href="index.html" aria-current="page" class="footer-brand-2 w-nav-brand w--current">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/IPP_SoluCa_logo_textejaune-p-1080.png?v=1682054902" loading="lazy"
+                sizes="(max-width: 767px) 67.27083587646484px, (max-width: 991px) 11vw, 105.39583587646484px"
+                height="19"
+                srcset="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/IPP_SoluCa_logo_textejaune-p-1080.png?v=1682054902"
+                alt="" class="image-ruc" style="will-change: opacity; opacity: 1;"></a>
+            <p class="footer-brand-description-2">IPP Solutions Canada Inc distributes aqueduct and sewer cleaning,
+              inspection and rehabilitation products across Canada.</p>
+          </div>
+        </div>
+        <div class="footer-info-wrapper">
+          <p class="footer-brand-description-2">30-800 Route Carter Sainte-Marie, Qc G6E 0B2</p>
+          <a href="tel:1-418-809-9309" class="footer-link-3">1-418-809-9309</a>
+          <a href="mailto:info@ippsolutionscanada.com" class="footer-link-3">info@ippsolutionscanada.com</a>
+        </div>
+      </div>
+      <div class="footer-form-wrapper">
+        <h2 class="footer-form-title"><span class="blue-h2-text footer">Subscribe</span> to our news and <span
+            class="blue-h2-text footer">get a discount</span> on the first service.</h2>
+        <div class="w-form">
+          {%- form 'customer', id: 'ContactFooter', class: 'footer-email-form' -%}
+        
+            <input
+              id="NewsletterForm--{{ section.id }}"
+              type="email"
+              name="contact[email]"
+              class="footer-email-text-field w-input"
+              value="{{ form.email }}"
+              aria-required="true"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              {% if form.errors %}
+                autofocus
+                aria-invalid="true"
+                aria-describedby="ContactFooter-error"
+              {% elsif form.posted_successfully? %}
+                aria-describedby="ContactFooter-success"
+              {% endif %}
+              placeholder="{{ 'newsletter.label' | t }}"
+              required
+            >
+            <label class="subscribe-form__label" for="NewsletterForm--{{ section.id }}">
+              {{ 'newsletter.label' | t }}
+            </label>
+            <button
+              type="submit"
+              class="primary-blue-button w-button subscribe-form-btn btn-submit"
+              name="commit"
+              id="Subscribe"
+              aria-label="{{ 'newsletter.button_label' | t }}"
+             style="min-width: 180px;"
+            >
+            Start Now
+            </button>
+          {%-endform -%}
+          <div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="7ce617ec-d939-c9a7-048b-7fd81a04dc40" class="footer-links-wrapper-2"
+      style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+      <a href="/" aria-current="page" class="footer-link-3 w--current">Home</a>
+      <a href="{{section.settings.link_services}}" class="footer-link-3">Services</a>
+      <a href="{{section.settings.link_product}}" class="footer-link-3">Products</a>
+      <a href="{{section.settings.link_contact}}" class="footer-link-3">Contact Us</a>
+    </div>
+    <div data-w-id="7ce617ec-d939-c9a7-048b-7fd81a04dc4b" class="footer-rights-wrapper-2"
+      style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+      <div class="footer-copyright-2">© <span  class="link-2 w--current">IPP</span>
+        Solutions Canada Inc. All Rights Reserved 2023.</div>
+    </div>
+  </div>
+</div>
+<style>
+  section{
+    padding: 0 !important;
+  }
+  .wf-section {
+    margin-top: 0px;
+}
+</style>
+{% schema %}
+{
+  "name": "Custom footer",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+  {
+    "type": "url",
+    "id": "link_services",
+    "label": "Link Services"
+  },
+  {
+    "type": "url",
+    "id": "link_product",
+    "label": "Link Products"
+  },
+  {
+    "type": "url",
+    "id": "link_contact",
+    "label": "Link Contact us"
+  }
+  ],
+  "blocks": [
+    
+  ],
+  "presets": [
+    {
+      "name": "Custom footer"
+    }
+  ]
+}
+{% endschema %}

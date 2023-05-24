@@ -1,0 +1,154 @@
+<div id="contact-service" class="home-services-page wf-section">
+  <div class="hero-services-wrapper">
+    <div class="services-hero-content-wrapper">
+      <div class="home-4-content-wrap">
+        <div class="main-title-wrapper home-4-wrap"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+          <h6 id="servicesh1" class="vertical-inscription-home-4 services vertical-txt-cotact-ban">Our Services</h6>
+          <h1 id="servicesh1_1" class="home-1-title services" ><span 
+              class="yellow-h2-text"><strong>RIDGID</strong></span><strong> Camera Repairs Service</strong></h1>
+        </div>
+        <p data-w-id="ecc8c14e-11a5-84ce-8706-b77e3b212b6b"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          class="home-ruc-4-description">We offer professional RIDGID camera repair services. Our services will save you
+          time and money by restoring your camera to its optimal performance, so you can get back to work with minimal
+          downtime.<br></p>
+        <div data-w-id="ecc8c14e-11a5-84ce-8706-b77e3b212b6e"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          class="button-block-right">
+          <a href="tel:1-418-809-9309" class="primary-yellow-button">Call us now</a>
+        </div>
+      </div>
+      <div class="bottom-block-home-servicies">
+        <div data-w-id="ecc8c14e-11a5-84ce-8706-b77e3b212b74"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;  margin-top: 20px;"
+          class="text-block home-4-description desk-txt  ">Different companies cooperate with us</div>
+        <div data-w-id="ecc8c14e-11a5-84ce-8706-b77e3b212b76"
+          style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; "
+          class="brand-block">
+          <div class="brand-block-image"><img src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/Group-2.png?v=1682087163" loading="lazy" alt=""
+              class="image-brand services"></div>
+          <div class="brand-block-image"><img src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/Mask-group_1.png?v=1682087224" loading="lazy" alt=""
+              class="image-brand services"></div>
+          <div class="brand-block-image"><img src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/Mask-group-1.png?v=1682087291" loading="lazy" alt=""
+              class="image-brand services"></div>
+          <div class="brand-block-image"><img src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/Mask-group-2.png?v=1682087326" loading="lazy" alt=""
+              class="image-brand services"></div>
+        </div>
+      </div>
+      <!-- <div class="text-content-right-home-1"></div> -->
+    </div>
+    <div data-w-id="ed7452b6-f113-ba94-d048-6dda949ce9f7"
+      style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+      class="hero-contact">
+      <div class="big-form-block w-form">
+        
+          <div class="big-form-block w-form">
+            {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
+            {%- if form.posted_successfully? -%}
+            <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+              {% render 'icon-success' %}
+              {{ 'templates.contact.form.post_success' | t }}
+            </h2>
+            {%- elsif form.errors -%}
+            <div class="form__message">
+              <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+                {% render 'icon-error' %}
+                {{ 'templates.contact.form.error_heading' | t }}
+              </h2>
+            </div>
+            <ul class="form-status-list caption-large" role="list">
+              <li>
+                <a href="#ContactForm-email" class="link">
+                  {{ form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email }}
+                </a>
+              </li>
+            </ul>
+            {%- endif -%}
+          
+    
+            <div class="contact__fields1 flex-horizontal-center wrap-mobile">
+          
+              <input class="contacts-input-hero w-input" autocomplete="name" type="text" id="ContactForm-name"
+                name="contact[{{ 'templates.contact.form.name' | t }}]"
+                value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                placeholder="Your name">
+              <input autocomplete="email" type="email" id="ContactForm-email" class=" contacts-input-hero w-input"
+                name="contact[email]" spellcheck="false" autocapitalize="off"
+                value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                aria-required="true" {% if form.errors contains 'email' %} aria-invalid="true"
+                aria-describedby="ContactForm-email-error" {% endif %} placeholder="Your email">
+          
+              {%- if form.errors contains 'email' -%}
+              <small class="contact__field-error" id="ContactForm-email-error">
+                <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                <span class="form__message">
+                  {%- render 'icon-error' -%}
+                  {{- form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email -}}
+                </span>
+              </small>
+              {%- endif -%}
+            </div>
+            <div class="contact__fields1 flex-horizontal-center wrap-mobile">
+          
+              <input type="tel" id="ContactForm-phone" class="contacts-input-hero w-input" autocomplete="tel"
+                name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*"
+                value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+                placeholder="Your Phone Number">
+          
+              <input type="text" placeholder="Your Business Name" class="contacts-input-hero w-input" name="contact[busness name]" id="sity" />
+            </div>
+            <textarea rows="10" id="ContactForm-body" class="contacts-textarea-hero w-input"
+              name="contact[{{ 'templates.contact.form.comment' | t }}]" placeholder="Your message">
+                    {{- form.body -}}
+                  </textarea>
+          
+            <div class="contact__button">
+              <button type="submit" class="primary-yellow-button full-submit-width w-button" style="font-size: 16px;">
+                Submit
+              </button>
+            </div>
+            {%- endform -%}
+          </div>
+          
+        </div>
+        <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
+          <div class="text-block-2">Thank you! Your submission has been received!</div>
+        </div>
+        <div class="error-message w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+          <div class="text-block-3">Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+  </div>
+  <div class="banner-block-left-home-1 services"></div>
+</div>
+<style>
+  .form-status-list{
+    color: rgb(241, 242, 243);
+  }
+</style>
+{% schema %}
+{
+  "name": "Banner with form",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "include_margins",
+      "default": true,
+      "label": "t:sections.apps.settings.include_margins.label"
+    }
+  ],
+  "blocks": [
+    
+  ],
+  "presets": [
+    {
+      "name": "Banner with form"
+    }
+  ]
+}
+{% endschema %}

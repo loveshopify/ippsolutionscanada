@@ -1,0 +1,86 @@
+<div class="section banner-our-team wf-section">
+  <div class="base-container w-container"
+    style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+    <div class="ruc-container">
+      <div data-w-id="57b33e8d-2256-60d3-2434-2f1fafda47fd"
+        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+        class="main-title-wrapper leadership">
+        
+
+            {% if section.settings.vertical_txt != blank %}
+            <h3 id="fr6"  class="vertical_inscription h6-leadership heading-styling-h6 vertical-h6 no-mg" >{{section.settings.vertical_txt}}</h3>
+            {% endif %}
+            <h1 class="header-h1 leadership-title" style="margin-left: 0px;"> 
+                {% if section.settings.title1 !=blank %}
+                {{section.settings.title1}}
+              {% endif %}
+              {% if section.settings.title2 !=blank %}
+                <span class="blue-h1-title">{{section.settings.title2}}</span>
+              {% endif %}
+              {% if section.settings.title3 !=blank %}
+                {{section.settings.title3}}
+              {% endif %} </h1>
+      </div>
+      <p data-w-id="57b33e8d-2256-60d3-2434-2f1fafda4804"
+        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+        class="white-description-leadership">
+        {% if section.settings.paragraph !=blank %}
+                {{section.settings.paragraph}}
+              {% endif %}  </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .banner-our-team {
+    background-image: linear-gradient(45deg, #0b0d29, transparent), linear-gradient(180deg, rgba(6, 11, 61, 0.5), rgba(6, 11, 61, 0.5)), url({{section.settings.img_link}});
+  }
+  
+</style>
+{% schema %}
+{
+  "name": "Medium banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+  {
+    "type": "url",
+    "id": "img_link",
+    "label": "Background link"
+  },
+  {
+    "type": "text",
+    "id": "vertical_txt",
+    "label": "Vertical text"
+  },
+  {
+    "type": "text",
+    "id": "title1",
+    "label": "Title, white"
+  },
+  {
+    "type": "text",
+    "id": "title2",
+    "label": "Title, yellow"
+  },
+  {
+    "type": "text",
+    "id": "title3",
+    "label": "Title, white"
+  },
+  {
+    "type": "textarea",
+    "id": "paragraph",
+    "label": "Paragraph"
+  }
+  ],
+  "blocks": [
+    
+  ],
+  "presets": [
+    {
+      "name": "Medium banner"
+    }
+  ]
+}
+{% endschema %}

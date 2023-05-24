@@ -1,0 +1,56 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Welcome to our store",
+            "text_alignment": "center",
+            "color_scheme": "background-1",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "settings": {
+      }
+    },
+    "header": {
+      "type": "header",
+      "disabled": true,
+      "settings": {
+        "link": "shopify:\/\/pages\/contact-us",
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "mobile_logo_position": "left",
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "b7f34c0e-a6b0-4459-ac91-bf3c69ec147f": {
+      "type": "custon-nav",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "b7f34c0e-a6b0-4459-ac91-bf3c69ec147f"
+  ]
+}

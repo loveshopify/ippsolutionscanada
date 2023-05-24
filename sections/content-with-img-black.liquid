@@ -1,0 +1,160 @@
+<div class="section black wf-section">
+  <div class="base-container">
+    <div class="who-we-are-container who-we-are-container-{{section.id}} first-product">
+      <div class="about-us-wrap right">
+        <div data-w-id="3142f061-d390-4545-c22f-808f80c84ce0" style="opacity:1" class="div-block-18">
+          
+        {% if section.settings.image != blank %}
+          
+          <img src="{{section.settings.image  | img_url: '900x'}}" alt="{{section.settings.image.alt}}" loading="lazy" class="capabilities-image the-power-of-pan">
+          {% endif %}
+        </div>
+      </div>
+      <div class="about-us-wrap left">
+        <div data-w-id="3142f061-d390-4545-c22f-808f80c84ccb" style="opacity:1" class="main-left-title-wrapper full-width">
+          {% if section.settings.vertical_txt != blank %}
+          <h6 id="fr2" class="vertical_inscription vertical-title">{{section.settings.vertical_txt}}</h6>
+          {% endif %}
+          <h2 class="section-title-h2 heading-4 " > 
+              {% if section.settings.title1 !=blank %}
+              {{section.settings.title1}}
+            {% endif %}
+            {% if section.settings.title2 !=blank %}
+              <span class="blue-h2-text">{{section.settings.title2}}</span>
+            {% endif %}
+            {% if section.settings.title3 !=blank %}
+              {{section.settings.title3}}
+            {% endif %} </h2>
+        </div>
+        {% if section.settings.paragraph %}
+          <p data-w-id="3142f061-d390-4545-c22f-808f80c84cd2" style="opacity:1" class="description-about-us blue-background"> {{section.settings.paragraph}}</p>
+        {% endif %}
+          {% if section.settings.list-tem1 != blank %}
+          <div class="list-item-wrapper">
+            <div data-w-id="4b9e967a-0ab3-eee6-b68a-40b4ffb6a961" style="opacity:1;  display: block;" class="yellow-point"></div>
+            <p data-w-id="7cc19f14-e607-998e-2e94-234d11e3e008" style="opacity:1" class="list-item-text blue-background">{{section.settings.list-tem1}}</p>
+          </div>
+          {% endif %}
+          {% if section.settings.list-tem2 != blank %}
+          <div class="list-item-wrapper">
+            <div data-w-id="2e2c30c8-7c8d-973b-1938-11c2e91922c1" style="opacity:1;  display: block;" class="yellow-point"></div>
+            <p data-w-id="2e2c30c8-7c8d-973b-1938-11c2e91922c2" style="opacity:1" class="list-item-text blue-background">{{section.settings.list-tem2}}</p>
+          </div>
+          {% endif %}
+        
+        
+
+        {% if section.settings.button_link != blank %}
+        <div class="link-wrapper-with-line">
+          <a href="{{section.settings.button_link}}" class="primary-yellow-button">{{section.settings.btn-title}}</a>
+        </div>
+    {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="background-color right"></div>
+</div>
+{%- if section.settings.img-right_enable-%}
+  <style>
+    .who-we-are-container{
+      flex-direction: row-reverse;
+    }
+    /* @media screen and (max-width: 991px){
+      .who-we-are-container{
+      flex-direction: column-reverse !important;
+    } */
+    }
+  </style>
+{%- endif -%}
+{% if  section.settings.yellow-txt_enable %}
+  <style>
+    .blue-h2-text{
+      color: #f8d109;
+    }
+  </style>
+{% endif %}
+<style>
+  section{
+    padding: 0 !important;
+  }
+</style>
+{% schema %}
+{
+  "name": "content with img, black",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "vertical_txt",
+      "label": "Vertical text"
+    },
+    {
+      "type": "text",
+      "id": "title1",
+      "label": "Title, white"
+    },
+    {
+      "type": "text",
+      "id": "title2",
+      "label": "Title, blue"
+    },
+    {
+      "type": "text",
+      "id": "title3",
+      "label": "Title, white"
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph",
+      "label": "Paragraph"
+    },
+    {
+      "type": "textarea",
+      "id": "list-tem1",
+      "label": "List item text"
+    },
+    {
+      "type": "textarea",
+      "id": "list-tem2",
+      "label": "List item text"
+    },
+    {
+      "type": "text",
+      "id": "btn-title",
+      "label": "Button title",
+      "default": "Contact us"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "img-right_enable",
+      "default": false,
+      "label": "Image position is right"
+    },
+    {
+      "type": "checkbox",
+      "id": "yellow-txt_enable",
+      "default": false,
+      "label": "Yellow header"
+    }
+  ],
+  "blocks": [
+    
+  ],
+  "presets": [
+    {
+      "name": "content with img, black"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "9c3bf204-d61e-4342-8ec2-b435254a3c74": {
+      "type": "medium-header-banner",
+      "settings": {
+        "img_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0746\/0657\/5901\/files\/Ridgid-camera-repair_35f216fc-d101-4d39-a168-ac5590d564d1.jpg?v=1682054160",
+        "vertical_txt": "Contact us",
+        "title1": "Contact us to learn more about ",
+        "title2": "our products and services",
+        "title3": "",
+        "paragraph": "Our team has many years of experience and will help you ensure that you get the best products and services for your needs."
+      }
+    },
+    "77d39a69-12b7-4191-8f79-1ac366def173": {
+      "type": "custom-contact-form",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9c3bf204-d61e-4342-8ec2-b435254a3c74",
+    "77d39a69-12b7-4191-8f79-1ac366def173"
+  ]
+}

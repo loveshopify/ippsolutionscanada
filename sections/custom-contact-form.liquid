@@ -1,0 +1,131 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+
+
+<div class="section wf-section">
+  <div class="base-container-8 w-container">
+    <div data-w-id="4fd71d03-d449-5762-aabb-1db581483580" class="home-23-contacts-wrapper">
+      <div data-w-id="4fd71d03-d449-5762-aabb-1db581483581" class="home-contacts-2">
+        <div class="main-title-wrapper">
+          <h6 class="vertical_inscription secondary-sections vertical-title">Our contacts</h6>
+          <h2 class="question-title section-title-h2">Do you have an <span class="blue-h2-text">interesting question?</span></h2>
+        </div>
+        <div class="contacts-adress-wrap-2">
+          <div class="contacts-adress-2">
+            <h5 class="fotm-sub-title">Headquarters</h5>
+            <div class="contacts-detail">
+              <p class="contacts-icon"><img class="form-icon" src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/icons8-_-48.png?v=1682189514" alt="location"></p>
+              <p class="contacts-address">30-800 Route Carter Sainte-Marie, Qc G6E 0B2</p>
+            </div>
+            <div class="contacts-detail">
+              <p class="contacts-icon"><img class="form-icon" src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/icons8-_-30.png?v=1682189621" alt="tel"></p>
+              <div class="phone-wrapper">
+                <a href="tel:1-418-809-9309" class="contacts-link">1-418-809-9309</a>
+              </div>
+            </div> 
+            <div class="contacts-detail">
+              <p class="contacts-icon"><img class="form-icon" src="https://cdn.shopify.com/s/files/1/0746/0657/5901/files/icons8-_-_-60.png?v=1682189711" alt="phone"></p>
+              <a href="mailto:info@ippsolutionscanada.com" class="contacts-link">info@ippsolutionscanada.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-w-id="4fd71d03-d449-5762-aabb-1db58148359f" class="home-contacts-form-wrap-2">
+       
+       
+      <div class="big-form-block w-form">
+        <div class="big-form-block w-form">
+          {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
+          {%- if form.posted_successfully? -%}
+          <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+            {% render 'icon-success' %}
+            {{ 'templates.contact.form.post_success' | t }}
+          </h2>
+          {%- elsif form.errors -%}
+          <div class="form__message">
+            <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+              {% render 'icon-error' %}
+              {{ 'templates.contact.form.error_heading' | t }}
+            </h2>
+          </div>
+          <ul class="form-status-list caption-large" role="list">
+            <li>
+              <a href="#ContactForm-email" class="link">
+                {{ form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email }}
+              </a>
+            </li>
+          </ul>
+          {%- endif -%}
+        
+  
+          <div class="contact__fields1 flex-horizontal-center wrap-mobile">
+        
+            <input class="field__input1 contacts-input-ruc w-input" autocomplete="name" type="text" id="ContactForm-name"
+              name="contact[{{ 'templates.contact.form.name' | t }}]"
+              value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+              placeholder="Your name">
+            <input autocomplete="email" type="email" id="ContactForm-email" class="field__input1 contacts-input-ruc w-input"
+              name="contact[email]" spellcheck="false" autocapitalize="off"
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+              aria-required="true" {% if form.errors contains 'email' %} aria-invalid="true"
+              aria-describedby="ContactForm-email-error" {% endif %} placeholder="Your email">
+        
+            {%- if form.errors contains 'email' -%}
+            <small class="contact__field-error" id="ContactForm-email-error">
+              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+              <span class="form__message">
+                {%- render 'icon-error' -%}
+                {{- form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email -}}
+              </span>
+            </small>
+            {%- endif -%}
+          </div>
+          <div class="contact__fields1 flex-horizontal-center wrap-mobile">
+        
+            <input type="tel" id="ContactForm-phone" class="field__input1 contacts-input-ruc w-input" autocomplete="tel"
+              name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*"
+              value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+              placeholder="Your Phone Number">
+        
+            <input type="text"  placeholder="Your Business Name" class="contacts-input-ruc w-input" name="contact[business name]" id="sity" />
+          </div>
+          <textarea rows="10" id="ContactForm-body" class="text-area1 field__input1 contacts-textarea-ruc w-input"
+            name="contact[{{ 'templates.contact.form.comment' | t }}]" placeholder="Your message">
+                  {{- form.body -}}
+                </textarea>
+        
+          <div class="contact__button">
+            <button type="submit" class="button1 primary-blue-button full-submit-width w-button btn-submit">
+              Submit
+            </button>
+          </div>
+          {%- endform -%}
+        </div>
+        
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    
+
+{% schema %}
+{
+  "name": "Custom contact form",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+   
+  ],
+  "presets": [
+    {
+      "name": "Custom contact form"
+    }
+  ]
+}
+{% endschema %} 

@@ -1,0 +1,79 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "552eb760-e083-4a6b-bf26-1735cc9ebc93": {
+      "type": "banner-with-form",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "0a25ea84-f433-4bb2-982f-cdffb78c5998": {
+      "type": "benefits-with-icons",
+      "settings": {
+      }
+    },
+    "78bdaccc-a12c-4260-981e-5697cc79e05e": {
+      "type": "content-with-img-black",
+      "settings": {
+        "vertical_txt": "Our Services",
+        "title1": "",
+        "title2": "RIDGID",
+        "title3": "Camera Repairs Service",
+        "paragraph": "We repair all RIDGID cameras!\n‍<br>‍<br>\nWe offer high quality RIDGID camera repairs with quick turnaround time and can handle the shipping both ways to minimize the impact on your operations and costs.\n‍‍<br>‍<br>\nContacts us today to learn how we can help you get back up and running faster than ever before !",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/142E474F1D357BC2A5FA5B54299F64D8BDBEFA63C6E7E41FFE26E5751D633F32-491x491-1.png",
+        "img-right_enable": true,
+        "yellow-txt_enable": true
+      }
+    },
+    "6c10c781-33e2-4c2b-b142-557a9d19b616": {
+      "type": "blockquote-slider-light",
+      "settings": {
+      }
+    },
+    "e2283080-31b4-4f8b-8d70-ffcf472707ac": {
+      "type": "custom-contact-form",
+      "settings": {
+      }
+    },
+    "ee282c25-ebc0-4a80-b553-86e90fca4818": {
+      "type": "faq-custom-section",
+      "blocks": {
+        "e38c120b-3f39-4e3c-9143-1a9c85769bc3": {
+          "type": "block",
+          "settings": {
+            "block_title": "What are our company's advantages?",
+            "block_paragraph": "<p class=\"accordion-list-content\">IPP Solutions Canada is a leading camera repair company that specializes in the <strong>repair and maintenance of Ridgid cameras<\/strong>. Our company is known for its exceptional service and expertise in handling all types of camera repairs.<br><br>Here are some of the advantages of choosing IPP Solutions Canada for your camera repair needs:<br><br>-Expertise: Our team of skilled technicians has years of experience <strong>repairing and servicing Ridgid cameras<\/strong>. We are well-versed in the latest technology and techniques to ensure that your camera is repaired to the highest standards.<br><br>-Fast Turnaround Time: We understand that your camera is an essential tool for your business or personal use, which is why we offer a fast turnaround time on all repairs. Our goal is to get your camera back to you as quickly as possible so you can get back to work.<br><br>-Affordable Pricing: We believe that quality camera repair services should be accessible and affordable for everyone. That's why we offer competitive pricing without compromising on the quality of our work.<br><br>-Excellent Customer Service: At IPP Solutions Canada, we value our customers and strive to provide the best possible service. Our friendly and knowledgeable customer service team is always available to answer your questions and provide updates on your repair.<br><br>-Warranty: We stand behind our work and offer a warranty on all repairs. If you experience any issues with your repaired camera, we will fix it at no additional cost.<br><br>Choose IPP Solutions Canada for all your <strong>Ridgid camera repair needs<\/strong> and experience the advantage of working with a trusted and reliable camera repair company.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e38c120b-3f39-4e3c-9143-1a9c85769bc3"
+      ],
+      "settings": {
+        "vertical_txt": "Read  FAQ",
+        "title1": "IPP Solutions Canada,",
+        "title2": "customers frequently ask"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "552eb760-e083-4a6b-bf26-1735cc9ebc93",
+    "0a25ea84-f433-4bb2-982f-cdffb78c5998",
+    "78bdaccc-a12c-4260-981e-5697cc79e05e",
+    "6c10c781-33e2-4c2b-b142-557a9d19b616",
+    "e2283080-31b4-4f8b-8d70-ffcf472707ac",
+    "ee282c25-ebc0-4a80-b553-86e90fca4818"
+  ]
+}

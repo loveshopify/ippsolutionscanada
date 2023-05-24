@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "fb8cf227-6175-4a04-9851-7879e442f729": {
+      "type": "medium-header-banner",
+      "settings": {
+        "img_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0746\/0657\/5901\/files\/image-min-min_b0e1763b-bde9-4ba7-9ea9-c939bbe46c06.png?v=1682149815",
+        "vertical_txt": "Our products",
+        "title1": "Our products are",
+        "title2": "our pride ",
+        "title3": "and we stand behind them",
+        "paragraph": "IPP Solutions Canada offers an exclusive portfolio of high quality products along with fast and efficient service directly in Canada."
+      }
+    },
+    "c02ddf51-6bc5-4c16-bafb-31c2acca90d4": {
+      "type": "content-with-img",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "",
+        "title2": "PipeCaster Pro,",
+        "title3": "Redefining Pipe Rehabilitation",
+        "paragraph1": "With this SIPP (spray in place pipelining) technology, application is easy and can be done quickly. Digital controls allow for mixing two components in different ratios.",
+        "paragraph2": "With the fast-set, spray applied, two component polyurea, and no reinstatements, services can be promptly restored to the property owner.",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/PipeCasterProNoBG_web.webp",
+        "img-left_enable": true,
+        "img_top_mob": true
+      }
+    },
+    "dd6d65d6-8fc0-4699-a8fa-c6abc5c050ec": {
+      "type": "content-with-img-black",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "The Best ",
+        "title2": "Chain Cutters,",
+        "title3": "Period.",
+        "paragraph": "The Cyclone chain cutters are offered in 3\/8\", 5\/16\" and 1\/4\" and bring incredible performances and ruggedness at an unmatchable price point.",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/best-chain-cutters-1.png",
+        "img-right_enable": false,
+        "yellow-txt_enable": false
+      }
+    },
+    "6b241dc7-3c8f-4dde-88aa-75275d3d884b": {
+      "type": "content-with-img",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "",
+        "title2": "Tougher-than-Nail",
+        "title3": "Nozzles",
+        "paragraph1": "The USB-USA nozzles, powered by their unique flow of fluids within the nozzles help you get your hard job done right and keep on working job after job, saving you valuable time and money.",
+        "paragraph2": "",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/tougher-than-nai-nozzles-1.png",
+        "img-left_enable": false,
+        "img_top_mob": true
+      }
+    },
+    "21cfcf72-f1b2-4913-8892-ee0fc595a6ca": {
+      "type": "content-with-img-black",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "The Power of",
+        "title2": "Pan-and-Tilt ",
+        "title3": "Cameras",
+        "paragraph": "The vast range of powerful pan-and-tilt cameras offered by CustomEyes Cameras are very ruggedized and allow more plumbers to take advantage of this powerful technology.",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/56b5f4affa7480fb050035a5a7c9dc1a5ad14292-removebg-preview-min.png",
+        "img-right_enable": false,
+        "yellow-txt_enable": false
+      }
+    },
+    "2719d2e7-1a9b-47da-b12e-bbc2752e9d44": {
+      "type": "content-with-img",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "",
+        "title2": "Vetter",
+        "title3": "Pipe Sealing Bags",
+        "paragraph1": "Vetter Pipe Sealing bags are the optimum solution when quick and reliable sealing of drainage is required. A big advantage of the sealing bags are their freely selectable contact pressure(on the pipe wall): from 0.5 bar to 2.5 bar\/7.25 psi to 36.25 psi.",
+        "paragraph2": "The areas of operation are, among others:",
+        "list-tem1": "Sealing off sewer pipelines during repair or maintenance work",
+        "list-tem2": "Avoiding sewage backflow at the source location during pipe bursts, flooding, sewer inspection, sewer cleaning, repair and maintenance work",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/kv_rohr_dichtkissen_01_600x6002x-p-500.png",
+        "img-left_enable": false,
+        "img_top_mob": true
+      }
+    },
+    "ace132c5-1562-4cdd-a000-8999e8ef951d": {
+      "type": "content-with-img-black",
+      "settings": {
+        "vertical_txt": "Our Products",
+        "title1": "MwStop® <br>",
+        "title2": "CheckValve",
+        "title3": "",
+        "paragraph": "MwStop® can be installed in virtually any pipe, even retrospectively, in just a few minutes and provides immediate effective protection against flooding, foreign bodies and annoying odours.\n<br> <br>\nThe wide MwStop® range ensures that the right MwStop® model is available for every application, whether it is for backwater protection of the sewer system, for use in rainwater pipes or for preventing odour formation in mixed sewers.",
+        "list-tem1": "",
+        "list-tem2": "",
+        "btn-title": "Contact us",
+        "button_link": "shopify:\/\/pages\/contact-us",
+        "image": "shopify:\/\/shop_images\/Auslaufmontage-800x800.png",
+        "img-right_enable": false,
+        "yellow-txt_enable": false
+      }
+    },
+    "b3dd4cb1-ff88-463d-af05-1787be7164e9": {
+      "type": "custom-contact-form",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fb8cf227-6175-4a04-9851-7879e442f729",
+    "c02ddf51-6bc5-4c16-bafb-31c2acca90d4",
+    "dd6d65d6-8fc0-4699-a8fa-c6abc5c050ec",
+    "6b241dc7-3c8f-4dde-88aa-75275d3d884b",
+    "21cfcf72-f1b2-4913-8892-ee0fc595a6ca",
+    "2719d2e7-1a9b-47da-b12e-bbc2752e9d44",
+    "ace132c5-1562-4cdd-a000-8999e8ef951d",
+    "b3dd4cb1-ff88-463d-af05-1787be7164e9"
+  ]
+}
